@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameFlix - Catálogo de Juegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header estilo Netflix -->
+    <header class="header">
+        <div class="logo">🎮 GAMEFLIX</div>
+        <input type="text" id="buscador" placeholder="Buscar juego..." class="buscador">
+    </header>
+
+    <!-- Banner destacado -->
+    <section class="hero" id="hero">
+        <div class="hero-contenido">
+            <h1 id="hero-titulo">Cargando...</h1>
+            <p id="hero-sinopsis"></p>
+            <button class="btn-hero" onclick="scrollToCatalogo()">Ver catálogo</button>
+        </div>
+    </section>
+
+    <!-- Filtros por género -->
+    <section class="filtros">
+        <button class="filtro-btn activo" data-genero="todos">Todos</button>
+        <button class="filtro-btn" data-genero="Acción">Acción</button>
+        <button class="filtro-btn" data-genero="RPG">RPG</button>
+        <button class="filtro-btn" data-genero="Aventura">Aventura</button>
+        <button class="filtro-btn" data-genero="Terror">Terror</button>
+        <button class="filtro-btn" data-genero="Metroidvania">Metroidvania</button>
+        <button class="filtro-btn" data-genero="Plataformas">Plataformas</button>
+        <button class="filtro-btn" data-genero="Lucha">Lucha</button>
+    </section>
+
+    <!-- Catálogo -->
+    <main>
+        <h2 class="seccion-titulo">Catálogo completo</h2>
+        <div class="catalogo" id="catalogo"></div>
+    </main>
+
+    <!-- Modal de detalles -->
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-info"></p>
+            <p id="modal-sinopsis"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+          </html>
