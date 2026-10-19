@@ -1,32 +1,25 @@
+// Asegúrate de que 'lista.txt' esté en la misma carpeta
 const URL_DATOS = './lista.txt';
 let todosLosJuegos = [];
 
-// Cargar datos
 async function cargarDatos() {
     try {
         const respuesta = await fetch(URL_DATOS);
         todosLosJuegos = await respuesta.json();
 
-        // Banner con un juego aleatorio
         mostrarHero(todosLosJuegos[Math.floor(Math.random() * todosLosJuegos.length)]);
-
-        // Generar filtros dinámicamente desde los géneros del JSON
         generarFiltros(todosLosJuegos);
-
-        // Renderizar catálogo
         renderizarCatalogo(todosLosJuegos);
     } catch (error) {
         console.error('Error:', error);
-        document.getElementById('catalogo').innerHTML = '<p>Error al cargar el catálogo.</p>';
+        document.getElementById('catalogo').innerHTML = '<p>Error al cargar el catálogo. Revisa que lista.txt exista.</p>';
     }
 }
 
-// Banner destacado
 function mostrarHero(juego) {
     document.getElementById('hero-titulo').textContent = juego.titulo;
     document.getElementById('hero-sinopsis').textContent = juego.sinopsis;
 
-    // Imagen de fondo del hero
     const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
     const hero = document.getElementById('hero');
     const img = new Image();
@@ -36,7 +29,6 @@ function mostrarHero(juego) {
     img.src = urlImagen;
 }
 
-// Generar botones de filtro desde los géneros reales del JSON
 function generarFiltros(juegos) {
     const contenedor = document.getElementById('filtros');
     const generosSet = new Set();
@@ -45,7 +37,6 @@ function generarFiltros(juegos) {
         (j.genero || []).forEach(g => generosSet.add(g));
     });
 
-    // Ordenar alfabéticamente y limitar a los más comunes
     const generos = Array.from(generosSet).sort();
 
     generos.forEach(genero => {
@@ -56,7 +47,6 @@ function generarFiltros(juegos) {
         contenedor.appendChild(btn);
     });
 
-    // Asignar evento a todos los botones (incluido "Todos")
     document.querySelectorAll('.filtro-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('activo'));
@@ -75,7 +65,6 @@ function generarFiltros(juegos) {
     });
 }
 
-// Renderizar tarjetas
 function renderizarCatalogo(juegos) {
     const catalogo = document.getElementById('catalogo');
     catalogo.innerHTML = '';
@@ -85,7 +74,6 @@ function renderizarCatalogo(juegos) {
         tarjeta.className = 'tarjeta';
         tarjeta.onclick = () => abrirModal(juego);
 
-        // Construir URL de la portada con region e id
         const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
 
         tarjeta.innerHTML = `
@@ -108,7 +96,6 @@ function renderizarCatalogo(juegos) {
     });
 }
 
-// Modal
 function abrirModal(juego) {
     const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
 
@@ -134,7 +121,6 @@ function scrollToCatalogo() {
     document.querySelector('.seccion-titulo').scrollIntoView({ behavior: 'smooth' });
 }
 
-// Buscador
 document.getElementById('buscador').addEventListener('input', (e) => {
     const texto = e.target.value.toLowerCase();
     const filtrados = todosLosJuegos.filter(j =>
@@ -144,10 +130,8 @@ document.getElementById('buscador').addEventListener('input', (e) => {
     renderizarCatalogo(filtrados);
 });
 
-// Cerrar modal al clic fuera
 document.getElementById('modal').addEventListener('click', (e) => {
     if (e.target.id === 'modal') cerrarModal();
 });
 
-// Iniciar
 document.addEventListener('DOMContentLoaded', cargarDatos);
