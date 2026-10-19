@@ -187,7 +187,7 @@
             padding: 20px 40px 80px;
         }
 
-        /* --- TARJETA --- */
+        /* --- TARJETA ESTIRADA A LO LARGO --- */
         .tarjeta {
             background: #1a1a3e;
             border-radius: 16px;
@@ -196,7 +196,8 @@
             transition: all 0.35s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
-            aspect-ratio: 3 / 4; /* Proporción original de Switch */
+            /* Aquí está la magia: hacemos la tarjeta más alta que ancha */
+            aspect-ratio: 3 / 5; 
             margin-top: 15px; 
         }
 
@@ -205,6 +206,7 @@
             box-shadow: 0 20px 40px rgba(241, 91, 181, 0.3), 0 0 30px rgba(0, 245, 212, 0.2);
         }
 
+        /* La imagen se estira para cubrir TODO el fondo */
         .tarjeta-imagen {
             position: absolute;
             inset: 0;
@@ -216,24 +218,25 @@
         .tarjeta-imagen img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Llena el marco sin deformarse, y como las proporciones son 3:4, no se recorta */
-            object-position: center;
+            object-fit: cover; /* Cubre todo el espacio sin dejar huecos */
+            object-position: center top; /* Centra la imagen desde arriba */
             transition: transform 0.5s;
             display: block;
         }
 
         .tarjeta:hover .tarjeta-imagen img {
-            transform: scale(1.05);
+            transform: scale(1.08);
         }
 
+        /* El texto flota abajo sobre un degradado más largo */
         .tarjeta-info {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
             z-index: 2;
-            padding: 60px 16px 16px 16px; 
-            background: linear-gradient(to top, rgba(15, 12, 41, 0.98) 0%, rgba(15, 12, 41, 0.8) 40%, transparent 100%);
+            padding: 80px 16px 16px 16px; /* Más espacio para el degradado */
+            background: linear-gradient(to top, rgba(15, 12, 41, 0.98) 0%, rgba(15, 12, 41, 0.8) 50%, transparent 100%);
             display: flex;
             flex-direction: column;
         }
@@ -340,6 +343,205 @@
             background: linear-gradient(90deg, #00f5d4, #f15bb5);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .modal-contenido p {
+            line-height: 1.7;
+            margin-bottom: 12px;
+            color: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .header { padding: 15px 20px; }
+            .logo { font-size: 20px; }
+            .buscador { width: 140px; }
+            .hero { padding: 40px 20px; height: 55vh; }
+            .hero h1 { font-size: 34px; }
+            .filtros, .seccion-titulo, .catalogo { padding-left: 20px; padding-right: 20px; }
+            .catalogo { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px; }
+            .tarjeta { margin-top: 10px; aspect-ratio: 3 / 5; }
+            .tarjeta-info { padding: 60px 12px 12px 12px; }
+            .modal-contenido { padding: 25px; }
+            .modal-imagen { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🎮 GAMEFLIX</div>
+        <input type="text" id="buscador" placeholder="Buscar juego..." class="buscador">
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-contenido">
+            <h1 id="hero-titulo">Cargando...</h1>
+            <p id="hero-sinopsis"></p>
+            <button class="btn-hero" onclick="scrollToCatalogo()">Ver catálogo</button>
+        </div>
+    </section>
+
+    <section class="filtros" id="filtros">
+        <select class="filtro-select" id="select-genero">
+            <option value="todos">Todos los géneros</option>
+        </select>
+    </section>
+
+    <main>
+        <h2 class="seccion-titulo">Catálogo completo</h2>
+        <div class="catalogo" id="catalogo"></div>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <div class="modal-imagen" id="modal-imagen"></div>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-info"></p>
+            <p id="modal-sinopsis"></p>
+        </div>
+    </div>
+
+    <script>
+        const URL_DATOS = './lista.txt';
+        let todosLosJuegos = [];
+
+        async function cargarDatos() {
+            try {
+                const respuesta = await fetch(URL_DATOS);
+                todosLosJuegos = await respuesta.json();
+
+                mostrarHero(todosLosJuegos[Math.floor(Math.random() * todosLosJuegos.length)]);
+                generarFiltros(todosLosJuegos);
+                renderizarCatalogo(todosLosJuegos);
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('catalogo').innerHTML = '<p style="padding: 20px;">Error al cargar el catálogo. Revisa que lista.txt sea un JSON válido y no esté cortado.</p>';
+            }
+        }
+
+        function mostrarHero(juego) {
+            document.getElementById('hero-titulo').textContent = juego.titulo;
+            document.getElementById('hero-sinopsis').textContent = juego.sinopsis;
+
+            const urlImagen = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
+            const hero = document.getElementById('hero');
+            const img = new Image();
+            img.onload = () => {
+                hero.style.backgroundImage = `linear-gradient(0deg, #0f0c29 0%, rgba(15,12,41,0.6) 50%, transparent 100%), url('${urlImagen}')`;
+            };
+            img.src = urlImagen;
+        }
+
+        function generarFiltros(juegos) {
+            const select = document.getElementById('select-genero');
+            const generosSet = new Set();
+
+            juegos.forEach(j => {
+                (j.genero || []).forEach(g => generosSet.add(g));
+            });
+
+            const generos = Array.from(generosSet).sort();
+
+            generos.forEach(genero => {
+                const option = document.createElement('option');
+                option.value = genero;
+                option.textContent = genero;
+                select.appendChild(option);
+            });
+
+            select.addEventListener('change', (e) => {
+                const genero = e.target.value;
+                if (genero === 'todos') {
+                    renderizarCatalogo(todosLosJuegos);
+                } else {
+                    const filtrados = todosLosJuegos.filter(j =>
+                        (j.genero || []).some(g => g.toLowerCase() === genero.toLowerCase())
+                    );
+                    renderizarCatalogo(filtrados);
+                }
+            });
+        }
+
+        function renderizarCatalogo(juegos) {
+            const catalogo = document.getElementById('catalogo');
+            catalogo.innerHTML = '';
+
+            juegos.forEach(juego => {
+                const tarjeta = document.createElement('div');
+                tarjeta.className = 'tarjeta';
+                tarjeta.onclick = () => abrirModal(juego);
+
+                const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
+
+                tarjeta.innerHTML = `
+                    <div class="tarjeta-imagen">
+                        <img src="${urlImagen}" alt="${juego.titulo}" loading="lazy"
+                             onerror="this.style.display='none'; this.parentElement.innerHTML='🎮';">
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>${juego.titulo}</h3>
+                        <div class="tarjeta-meta">
+                            <span>${juego.lanzamiento || 'N/A'}</span>
+                            <span>${juego.region || ''}</span>
+                        </div>
+                        <div class="tarjeta-generos">
+                            ${(juego.genero || []).map(g => `<span class="genero-tag">${g}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+                catalogo.appendChild(tarjeta);
+            });
+        }
+
+        function abrirModal(juego) {
+            let urlImagen = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
+            
+            if (juego.fanart) {
+                urlImagen = juego.fanart;
+            }
+
+            document.getElementById('modal-imagen').innerHTML =
+                `<img src="${urlImagen}" alt="${juego.titulo}" onerror="this.parentElement.innerHTML='🎮';">`;
+
+            document.getElementById('modal-titulo').textContent = juego.titulo;
+            document.getElementById('modal-info').innerHTML =
+                `<strong>Plataforma:</strong> ${juego.plataforma || 'N/A'}<br>
+                 <strong>Año:</strong> ${juego.lanzamiento || 'N/A'}<br>
+                 <strong>Géneros:</strong> ${(juego.genero || []).join(', ')}<br>
+                 <strong>Región:</strong> ${juego.region || 'N/A'}<br>
+                 <strong>Estado:</strong> ${juego.estado || 'N/A'}`;
+            document.getElementById('modal-sinopsis').textContent = juego.sinopsis;
+            document.getElementById('modal').classList.add('activo');
+        }
+
+        function cerrarModal() {
+            document.getElementById('modal').classList.remove('activo');
+        }
+
+        function scrollToCatalogo() {
+            document.querySelector('.seccion-titulo').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.getElementById('buscador').addEventListener('input', (e) => {
+            const texto = e.target.value.toLowerCase();
+            const filtrados = todosLosJuegos.filter(j =>
+                j.titulo.toLowerCase().includes(texto) ||
+                (j.sinopsis && j.sinopsis.toLowerCase().includes(texto))
+            );
+            renderizarCatalogo(filtrados);
+        });
+
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') cerrarModal();
+        });
+
+        document.addEventListener('DOMContentLoaded', cargarDatos);
+    </script>
+</body>
+</html>       -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 15px;
             font-size: 28px;
