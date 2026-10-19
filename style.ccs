@@ -6,9 +6,9 @@
 }
 
 body {
-    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%) !important;
     background-attachment: fixed;
-    color: #fff;
+    color: #ffffff !important;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -165,6 +165,7 @@ body {
     padding: 20px 40px;
     font-size: 26px;
     font-weight: 800;
+    color: #fff;
 }
 
 .catalogo {
@@ -182,21 +183,8 @@ body {
     transition: all 0.35s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
-}
-
-.tarjeta::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 16px;
-    padding: 2px;
-    background: linear-gradient(135deg, #00f5d4, #f15bb5, #fee440);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0;
-    transition: opacity 0.35s;
-    pointer-events: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .tarjeta:hover {
@@ -204,17 +192,12 @@ body {
     box-shadow: 0 20px 40px rgba(241, 91, 181, 0.3), 0 0 30px rgba(0, 245, 212, 0.2);
 }
 
-.tarjeta:hover::before {
-    opacity: 1;
-}
-
 .tarjeta-imagen {
-    height: 300px;
-    background: linear-gradient(135deg, #2a2a5a, #1a1a3e);
+    aspect-ratio: 3 / 4; /* Proporción original de las portadas de Switch */
+    background: #1a1a3e;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
     position: relative;
     overflow: hidden;
 }
@@ -222,18 +205,25 @@ body {
 .tarjeta-imagen img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain; /* Hace que la imagen se vea completa sin cortarse */
     transition: transform 0.5s;
     display: block;
 }
 
 .tarjeta:hover .tarjeta-imagen img {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .tarjeta-info {
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Degradado oscuro para que el texto resalte */
+    background: linear-gradient(to top, rgba(15, 12, 41, 0.95) 0%, rgba(15, 12, 41, 0.85) 70%, transparent 100%);
+    margin-top: -30px; /* Fusiona el degradado con la imagen */
+    position: relative;
+    z-index: 2;
 }
 
 .tarjeta-info h3 {
@@ -243,13 +233,14 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 .tarjeta-meta {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
-    color: #aaa;
+    color: #ccc;
     margin-bottom: 10px;
 }
 
@@ -257,6 +248,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    margin-top: auto;
 }
 
 .genero-tag {
@@ -305,12 +297,16 @@ body {
     overflow: hidden;
     margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
 }
 
 .modal-imagen img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* En el modal también evitamos recortes */
 }
 
 .cerrar {
@@ -347,12 +343,12 @@ body {
 @media (max-width: 768px) {
     .header { padding: 15px 20px; }
     .logo { font-size: 20px; }
-    .buscador { width: 150px; }
+    .buscador { width: 140px; }
     .hero { padding: 40px 20px; height: 55vh; }
     .hero h1 { font-size: 34px; }
     .filtros, .seccion-titulo, .catalogo { padding-left: 20px; padding-right: 20px; }
-    .catalogo { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
-    .tarjeta-imagen { height: 200px; }
+    .catalogo { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
+    .tarjeta-imagen { aspect-ratio: 3 / 4; } /* Mantiene proporción en móvil */
     .modal-contenido { padding: 25px; }
-    .modal-imagen { height: 200px; }
+    .modal-imagen { height: 250px; }
 }
