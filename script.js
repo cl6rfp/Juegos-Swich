@@ -1,4 +1,3 @@
-// Asegúrate de que 'lista.txt' esté en la misma carpeta
 const URL_DATOS = './lista.txt';
 let todosLosJuegos = [];
 
@@ -10,9 +9,13 @@ async function cargarDatos() {
         mostrarHero(todosLosJuegos[Math.floor(Math.random() * todosLosJuegos.length)]);
         generarFiltros(todosLosJuegos);
         renderizarCatalogo(todosLosJuegos);
+        
+        // Contador de juegos
+        document.getElementById('contador-juegos').textContent = `${todosLosJuegos.length} Juegos`;
+
     } catch (error) {
         console.error('Error:', error);
-        document.getElementById('catalogo').innerHTML = '<p>Error al cargar el catálogo. Revisa que lista.txt exista.</p>';
+        document.getElementById('catalogo').innerHTML = '<p style="padding: 20px;">Error al cargar el catálogo. Revisa que lista.txt sea un JSON válido y no esté cortado.</p>';
     }
 }
 
@@ -20,17 +23,17 @@ function mostrarHero(juego) {
     document.getElementById('hero-titulo').textContent = juego.titulo;
     document.getElementById('hero-sinopsis').textContent = juego.sinopsis;
 
-    const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
+    const urlImagen = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
     const hero = document.getElementById('hero');
     const img = new Image();
     img.onload = () => {
-        hero.style.backgroundImage = `linear-gradient(0deg, #0f0c29 0%, rgba(15,12,41,0.5) 50%, transparent 100%), url('${urlImagen}')`;
+        hero.style.backgroundImage = `linear-gradient(0deg, #0f0c29 0%, rgba(15,12,41,0.6) 50%, transparent 100%), url('${urlImagen}')`;
     };
     img.src = urlImagen;
 }
 
 function generarFiltros(juegos) {
-    const contenedor = document.getElementById('filtros');
+    const select = document.getElementById('select-genero');
     const generosSet = new Set();
 
     juegos.forEach(j => {
@@ -40,28 +43,22 @@ function generarFiltros(juegos) {
     const generos = Array.from(generosSet).sort();
 
     generos.forEach(genero => {
-        const btn = document.createElement('button');
-        btn.className = 'filtro-btn';
-        btn.dataset.genero = genero;
-        btn.textContent = genero;
-        contenedor.appendChild(btn);
+        const option = document.createElement('option');
+        option.value = genero;
+        option.textContent = genero;
+        select.appendChild(option);
     });
 
-    document.querySelectorAll('.filtro-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('activo'));
-            btn.classList.add('activo');
-
-            const genero = btn.dataset.genero;
-            if (genero === 'todos') {
-                renderizarCatalogo(todosLosJuegos);
-            } else {
-                const filtrados = todosLosJuegos.filter(j =>
-                    (j.genero || []).some(g => g.toLowerCase() === genero.toLowerCase())
-                );
-                renderizarCatalogo(filtrados);
-            }
-        });
+    select.addEventListener('change', (e) => {
+        const genero = e.target.value;
+        if (genero === 'todos') {
+            renderizarCatalogo(todosLosJuegos);
+        } else {
+            const filtrados = todosLosJuegos.filter(j =>
+                (j.genero || []).some(g => g.toLowerCase() === genero.toLowerCase())
+            );
+            renderizarCatalogo(filtrados);
+        }
     });
 }
 
@@ -97,7 +94,11 @@ function renderizarCatalogo(juegos) {
 }
 
 function abrirModal(juego) {
-    const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
+    let urlImagen = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
+    
+    if (juego.fanart) {
+        urlImagen = juego.fanart;
+    }
 
     document.getElementById('modal-imagen').innerHTML =
         `<img src="${urlImagen}" alt="${juego.titulo}" onerror="this.parentElement.innerHTML='🎮';">`;
