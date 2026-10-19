@@ -1,0 +1,1612 @@
+[
+  {
+    "id": "AACCA",
+    "region": "US",
+    "titulo": "1-2-Switch",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Fiesta", "Minijuegos"],
+    "sinopsis": "Una colección de minijuegos que se juegan mirándose a los ojos, sin necesidad de mirar la pantalla. Aprovecha las funciones del Joy-Con para duelos de vaqueros, ordeñar vacas, concursos de baile y mucho más, convirtiendo cualquier reunión en una fiesta instantánea.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BN47A",
+    "region": "US",
+    "titulo": "Absolum",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2025",
+    "genero": ["Beat 'em up", "Roguelite", "Fantasía"],
+    "sinopsis": "Un beat 'em up roguelite ambientado en el mundo de fantasía de Talamh. El tiránico Rey Sol Azra ha esclavizado a los magos, y un grupo de rebeldes liderados por la hechicera Uchawi deberá alzarse para derrocarlo. Combina acción arcade con elementos roguelite y cooperativo.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AQ7JA",
+    "region": "EN",
+    "titulo": "ABZÛ",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Aventura", "Exploración submarina"],
+    "sinopsis": "Una bella aventura submarina de los creadores de Journey y Flower. Encarna a un submarinista y sumérgete en un océano lleno de vida y color, interactuando con bancos de peces y descubriendo antiguos secretos en las profundidades. Su nombre significa 'océano de sabiduría'.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ACBAA",
+    "region": "US",
+    "titulo": "Animal Crossing: New Horizons",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Simulación de vida", "Simulación social"],
+    "sinopsis": "Escapa a una isla desierta y crea tu propio paraíso en esta entrega de la querida saga de simulación de vida. Personaliza tu hogar, decora la isla, interactúa con vecinos animales y disfruta de un ritmo de vida relajado y libre de preocupaciones.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A33MA",
+    "region": "US",
+    "titulo": "Arcaea",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Ritmo", "Música"],
+    "sinopsis": "Un juego de ritmo que combina una jugabilidad novedosa con una profunda historia. Dos chicas despiertan en un mundo blanco y sin recuerdos, rodeadas de fragmentos de cristal que contienen memorias del pasado. La versión de Switch incluye más de 150 canciones y nuevas formas de juego con Joy-Con.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AABQA",
+    "region": "US",
+    "titulo": "ARMS",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Lucha", "Deportes"],
+    "sinopsis": "Un innovador juego de lucha donde los combatientes tienen brazos extensibles que pueden personalizarse con diferentes puños y atributos. Aprovecha los controles de movimiento del Joy-Con para lanzar golpes y enfrentarte a otros luchadores en arenas dinámicas.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AB48A",
+    "region": "US",
+    "titulo": "Astral Chain",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Acción", "Hack and slash"],
+    "sinopsis": "En un futuro cercano, la humanidad se refugia en 'El Arca' ante la invasión de seres extradimensionales llamados quimeras. Como parte de la unidad de élite Neuron, controlas a un policía que lucha encadenado a una 'Legión', un arma viva con la que coordinar ataques y resolver puzles en esta frenética aventura de PlatinumGames.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AE99A",
+    "region": "US",
+    "titulo": "Bayonetta",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Acción", "Hack and slash"],
+    "sinopsis": "Despierta tras 500 años de sueño sin recordar su pasado. Bayonetta, la última bruja Umbra, deberá enfrentarse a hordas de ángeles con su característico estilo de combate, que combina armas de fuego en manos y pies con su habilidad 'Tiempo Bruja' para ralentizar a los enemigos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AE98A",
+    "region": "US",
+    "titulo": "Bayonetta 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Acción", "Hack and slash"],
+    "sinopsis": "La secuela directa que profundiza en el universo de las brujas Umbra. Cuando su compañera Jeanne es arrastrada al infierno, Bayonetta deberá viajar a la ciudad sagrada de Fimbulvinter para salvarla, enfrentándose a ángeles y demonios en un sistema de combate aún más frenético y espectacular.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXB7A",
+    "region": "US",
+    "titulo": "Bayonetta 3",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Acción", "Hack and slash"],
+    "sinopsis": "La bruja Umbra regresa en una nueva aventura que la enfrenta a una amenaza multiversal conocida como 'Homúnculos'. Además de su arsenal habitual, Bayonetta puede invocar a demonios gigantes controlados por el jugador para causar destrucción a gran escala.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ANKSA",
+    "region": "US",
+    "titulo": "Blasphemous",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Metroidvania", "Acción", "Plataformas"],
+    "sinopsis": "Un desafiante metroidvania de estética gótica y pixel art inspirado en el folclore y la imaginería religiosa española. Encarnas al Penitente, el único superviviente de una masacre, atrapado en un ciclo de muerte y resurrección mientras busca la raíz de la maldición conocida como 'el Milagro' en la tierra de Cvstodia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXE3A",
+    "region": "US",
+    "titulo": "Blue Fire",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Acción", "Plataformas 3D"],
+    "sinopsis": "Una aventura de acción y plataformas 3D ambientada en el reino desolado de Penumbra. Controlas a una pequeña criatura que despierta en un mundo en ruinas y deberá explorar templos, mejorar sus habilidades y enfrentarse a enemigos para descubrir los secretos de esta tierra olvidada.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BGDKB",
+    "region": "JA",
+    "titulo": "Bō: Path of the Teal Lotus",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Metroidvania", "Plataformas", "Acción"],
+    "sinopsis": "Una colorida aventura de acción y plataformas 2.5D dibujada a mano e inspirada en el folclore japonés. Eres Bō, una flor celestial con forma de zorro que desciende de los cielos para desempeñar un papel clave en un antiguo ritual. Usa tu bastón para rebotar y planear por un mundo lleno de yōkai y monstruos legendarios.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AWVAA",
+    "region": "US",
+    "titulo": "Burnout Paradise Remastered",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Carreras", "Mundo abierto"],
+    "sinopsis": "La remasterización del aclamado juego de carreras arcade. Recorre las calles abiertas de Paradise City, descubre atajos, realiza acrobacias y destruye a tus rivales en colisiones espectaculares. Incluye todos los contenidos descargables y la expansión Big Surf Island.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BC3GA",
+    "region": "US",
+    "titulo": "Bread and Fred",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Plataformas", "Cooperativo"],
+    "sinopsis": "Un desafiante plataformas cooperativo para dos jugadores. Controlas a dos pingüinos, Bread y Fred, atados entre sí, que deben coordinarse para saltar y escalar hasta la cima de una montaña nevada. Cada salto requiere precisión, y un solo error puede hacer que ambos caigan.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AQNCA",
+    "region": "US",
+    "titulo": "Broforce",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Acción", "Plataformas", "Run and gun"],
+    "sinopsis": "Un homenaje exagerado y lleno de humor a las películas de acción de los 80 y 90. Controlas a los 'Bros', parodias de héroes de acción icónicos, en misiones para liberar áreas de terroristas, aliens y demonios. La destrucción del escenario es total y el cooperativo es el alma del juego.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AJH9A",
+    "region": "US",
+    "titulo": "Captain Toad: Treasure Tracker",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Puzles", "Plataformas"],
+    "sinopsis": "El Capitán Toad protagoniza su propia aventura de puzles y plataformas. A diferencia de otros héroes, no puede saltar, por lo que deberás usar el ingenio para rotar la cámara, activar mecanismos y encontrar el camino en niveles diseñados como dioramas tridimensionales para recuperar la hiperestrella y rescatar a Toadette.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AU3NA",
+    "region": "US",
+    "titulo": "CASE: Animatronics",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Terror", "Supervivencia"],
+    "sinopsis": "Un juego de terror en primera persona. Eres el detective John Bishop, atrapado en una comisaría de policía sin electricidad y con todas las salidas bloqueadas. Alguien, o algo, te acecha: animatrónicos de ojos rojos. Deberás usar las cámaras de seguridad, esconderte y encontrar la manera de sobrevivir.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A3TYA",
+    "region": "US",
+    "titulo": "Castlevania Advance Collection",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Metroidvania", "Acción", "Plataformas"],
+    "sinopsis": "Una recopilación que reúne clásicos de la saga Castlevania de Game Boy Advance, como Circle of the Moon, Harmony of Dissonance y Aria of Sorrow, junto con Dracula X. Incluye mejoras de calidad de vida como guardado rápido y retroceso, ideales para disfrutar de estos metroidvanias históricos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BCJMA",
+    "region": "US",
+    "titulo": "Castlevania Dominus Collection",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Metroidvania", "Acción", "Plataformas"],
+    "sinopsis": "Recopilatorio que agrupa las tres entregas de Castlevania para Nintendo DS: Dawn of Sorrow, Portrait of Ruin y Order of Ecclesia, además del arcade Haunted Castle. Una oportunidad perfecta para disfrutar de algunos de los metroidvanias más queridos de la saga en una sola colección.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AH79A",
+    "region": "US",
+    "titulo": "Cat Quest",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["RPG", "Acción", "Mundo abierto"],
+    "sinopsis": "Un encantador RPG de acción con un mundo abierto lleno de mazmorras y criaturas. Encarnas a un gato guerrero en una misión para rescatar a su hermana secuestrada, explorando la tierra de Felingard y enfrentándote a enemigos en tiempo real con un sistema de combate sencillo y adictivo.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AUUQA",
+    "region": "US",
+    "titulo": "Cat Quest II",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["RPG", "Acción", "Cooperativo"],
+    "sinopsis": "La secuela de Cat Quest amplía la aventura con un modo cooperativo para dos jugadores. Controla a un gato y a un perro que deben unir fuerzas para poner fin a una guerra entre sus reinos, explorando un mundo abierto, completando misiones y luchando contra enemigos en tiempo real.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BDAYA",
+    "region": "US",
+    "titulo": "Cat Quest III",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["RPG", "Acción", "Piratas"],
+    "sinopsis": "La tercera entrega de la saga traslada la acción a un archipiélago pirata. Navega por los mares, explora islas, saquea tesoros y enfréntate a enemigos en esta aventura de rol y acción con un tono desenfadado, manteniendo el combate en tiempo real y el humor característico de la serie.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A4ASA",
+    "region": "US",
+    "titulo": "Checkers Master",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Tablero", "Estrategia"],
+    "sinopsis": "Una versión digital del clásico juego de damas. Disfruta de partidas contra la inteligencia artificial o contra otros jugadores, con una interfaz sencilla y accesible para todos los públicos. Ideal para los amantes de los juegos de mesa tradicionales.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AS7TA",
+    "region": "US",
+    "titulo": "Clubhouse Games: 51 Worldwide Classics",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Tablero", "Cartas", "Minijuegos"],
+    "sinopsis": "Una colección de 51 juegos de mesa y cartas de todo el mundo, desde clásicos como el ajedrez, el póker o el dominó hasta juegos tradicionales de distintas culturas. Perfecto para jugar en solitario o con amigos y familiares, con tutoriales para cada juego.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ASWBB",
+    "region": "US",
+    "titulo": "Cadence of Hyrule: Crypt of the NecroDancer Featuring The Legend of Zelda",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Ritmo", "Roguelike", "Aventura"],
+    "sinopsis": "Una fusión única entre la saga The Legend of Zelda y el juego de ritmo Crypt of the NecroDancer. Explora un mundo generado proceduralmente al ritmo de la música, moviéndote y atacando siguiendo el compás. Incluye personajes como Link y Zelda, y una banda sonora con remixes de temas clásicos de la saga.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ASVUG",
+    "region": "US",
+    "titulo": "Cuphead",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Run and gun", "Plataformas", "Jefes"],
+    "sinopsis": "Un desafiante juego de acción y plataformas con un estilo artístico inspirado en los dibujos animados de los años 30. Controlas a Cuphead o Mugman, quienes deberán enfrentarse a una serie de jefes memorables y creativos para pagar una deuda con el diablo. Su dificultad y su apartado visual son sus señas de identidad.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AK63B",
+    "region": "US",
+    "titulo": "Dark Souls Remastered",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["RPG de acción", "Soulslike"],
+    "sinopsis": "La remasterización del icónico RPG de acción que definió un género. Explora el oscuro y interconectado mundo de Lordran, enfréntate a enemigos implacables y jefes desafiantes, y descubre su profunda lore a través de la exploración y el combate metódico. Una experiencia exigente y gratificante.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A8XTA",
+    "region": "US",
+    "titulo": "DAVE THE DIVER",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["Aventura", "RPG", "Simulación"],
+    "sinopsis": "Una aventura marina que combina exploración submarina durante el día con la gestión de un restaurante de sushi por la noche. Explora arrecifes llenos de vida, captura peces y criaturas marinas, y usa lo recolectado para servir platos a los clientes, mientras descubres los misterios de las profundidades.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ANXTB",
+    "region": "US",
+    "titulo": "Dead Cells",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Roguelike", "Metroidvania", "Acción"],
+    "sinopsis": "Un roguelike de acción con elementos de metroidvania. Controlas a un organismo creado por una entidad misteriosa que debe explorar una isla cambiante, enfrentándose a enemigos y jefes en un combate rápido y fluido. Cada muerte es permanente, pero desbloqueas mejoras que facilitan las siguientes incursiones.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BC7VB",
+    "region": "US",
+    "titulo": "Demon Slayer Kimetsu no Yaiba - The Hinokami Chronicles 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2025",
+    "genero": ["Lucha", "Acción", "Anime"],
+    "sinopsis": "La secuela del juego de lucha basado en el popular anime Demon Slayer. Revive los arcos argumentales de la serie con combates espectaculares entre demonios y cazadores de demonios, con un modo historia que recorre los eventos de la segunda temporada y el arco del Distrito del Entretenimiento.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AFWTA",
+    "region": "US",
+    "titulo": "Donkey Kong Country: Tropical Freeze",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Plataformas", "Aventura"],
+    "sinopsis": "El regreso de Donkey Kong en un desafiante plataformas 2D con niveles llenos de creatividad y secretos. Los Vikingos Pingüinos han invadido la Isla DK y han congelado todo a su paso. Con la ayuda de sus amigos Diddy, Dixie y Cranky Kong, Donkey Kong deberá recuperar su hogar en una aventura con un diseño de niveles impecable y una banda sonora memorable.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BG53A",
+    "region": "US",
+    "titulo": "DOOM + DOOM II",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["FPS", "Acción"],
+    "sinopsis": "La recopilación definitiva de los dos primeros DOOM, los juegos que definieron el género de los shooters en primera persona. Incluye las campañas originales, expansiones, multijugador y una selección de mods comunitarios, todo con mejoras técnicas y la posibilidad de jugar en cooperativo.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AUG7B",
+    "region": "EN",
+    "titulo": "Double Dragon",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Beat 'em up", "Acción"],
+    "sinopsis": "El clásico beat 'em up de los años 80 que ayudó a definir el género. Billy y Jimmy Lee, dos hermanos expertos en artes marciales, se enfrentan a la banda de los Black Warriors para rescatar a Marian. Un clásico arcade con combates cuerpo a cuerpo y un cooperativo para dos jugadores.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AM5WA",
+    "region": "US",
+    "titulo": "Dragon Ball FighterZ",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Lucha", "Acción", "Anime"],
+    "sinopsis": "Un juego de lucha en 2D con combates 3 contra 3 desarrollado por Arc System Works. Recrea la acción del anime Dragon Ball con un sistema de combate rápido y espectacular, personajes icónicos y un modo historia original. Su apartado visual es un homenaje al estilo de dibujo de la serie.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BNFLA",
+    "region": "US",
+    "titulo": "DRAGON BALL Sparking! ZERO",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2025",
+    "genero": ["Lucha", "Acción", "Anime"],
+    "sinopsis": "La nueva entrega de la saga Budokai Tenkaichi, que regresa con combates 3D en arenas destructibles. Con un roster de más de 180 personajes, revive momentos icónicos de Dragon Ball Z, Super y GT en batallas que capturan la esencia de la serie, con transformaciones y ataques devastadores.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ACXPB",
+    "region": "US",
+    "titulo": "Dragon Quest Builders",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Construcción", "RPG", "Sandbox"],
+    "sinopsis": "Un juego que combina la construcción de bloques tipo Minecraft con el universo de Dragon Quest. En un mundo devastado por el Rey Dragón, deberás reconstruir ciudades, fabricar objetos y ayudar a los supervivientes mientras luchas contra monstruos y descubres la historia de la tierra de Alefgard.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AH97D",
+    "region": "US",
+    "titulo": "DRAGON QUEST BUILDERS 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Construcción", "RPG", "Sandbox"],
+    "sinopsis": "La secuela amplía la fórmula con un mundo más grande, nuevas herramientas de construcción y un mayor énfasis en la narrativa. En un mundo donde construir está prohibido, deberás unirte a un grupo de rebeldes para restaurar la creatividad y derrotar a la orden que oprime a la humanidad.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AQTMA",
+    "region": "US",
+    "titulo": "Dragons: Dawn of New Riders",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Aventura", "Acción", "Plataformas"],
+    "sinopsis": "Una aventura basada en la franquicia Cómo Entrenar a tu Dragón. Encarna a un nuevo héroe y a su dragón en una misión para salvar el Archipiélago de una amenaza misteriosa. Explora islas, resuelve puzles y enfrenta a enemigos en un juego de acción y plataformas para toda la familia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BGGMA",
+    "region": "US",
+    "titulo": "Europa",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Aventura", "Exploración", "Puzles"],
+    "sinopsis": "Una serena aventura de exploración ambientada en una luna estéril pero hermosa. Controlas a un androide que debe descubrir los secretos de un mundo olvidado, planeando por paisajes oníricos y resolviendo puzles ambientales en una experiencia relajante y visualmente cautivadora.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AQBNA",
+    "region": "US",
+    "titulo": "Evoland Legendary Edition",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["RPG", "Aventura", "Acción"],
+    "sinopsis": "Una carta de amor a la historia de los RPG. Evoland y Evoland 2 te llevan en un viaje a través de la evolución de los videojuegos de rol, desde los gráficos de 8 bits hasta el 3D, cambiando de género y estilo visual a medida que avanzas en la historia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BD3VA",
+    "region": "US",
+    "titulo": "Expeditions: A MudRunner Game",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Simulación", "Conducción", "Aventura"],
+    "sinopsis": "Un juego de simulación de conducción off-road extrema. Dirige expediciones científicas a través de paisajes implacables, usando vehículos todo terreno y herramientas especializadas para superar obstáculos naturales. La física realista y la gestión de recursos son clave para el éxito.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A2A2A",
+    "region": "US",
+    "titulo": "Five Nights at Freddy's Collection",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "",
+    "genero": ["Terror", "Supervivencia"],
+    "sinopsis": "Una recopilación que reúne los primeros juegos de la aterradora saga Five Nights at Freddy's. Como guardia nocturno, deberás sobrevivir a los animatrónicos que cobran vida en una pizzería abandonada, usando las cámaras de seguridad y administrando la energía limitada mientras descubres los oscuros secretos del lugar.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AWUXA",
+    "region": "US",
+    "titulo": "Game Builder Garage",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Programación", "Creación", "Educativo"],
+    "sinopsis": "Una herramienta creativa que enseña a programar videojuegos de forma visual y divertida. A través de lecciones interactivas y criaturas llamadas 'Nodon', aprenderás los fundamentos de la lógica de programación para crear tus propios juegos, desde plataformas hasta carreras, y compartirlos con otros jugadores.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AZNQA",
+    "region": "US",
+    "titulo": "Gang Beasts",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Fiesta", "Lucha", "Multijugador"],
+    "sinopsis": "Un juego de fiesta multijugador con personajes de gelatina que se enfrentan en entornos peligrosos. El objetivo es simple: ser el último en pie, agarrando, empujando y lanzando a tus oponentes a trampas y precipicios. Su humor absurdo y su física caótica lo convierten en un éxito en reuniones.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AQPVB",
+    "region": "US",
+    "titulo": "Graveyard Keeper",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Simulación", "RPG", "Gestión"],
+    "sinopsis": "Un simulador de gestión de cementerio con un toque de humor negro. Debes administrar un cementerio medieval, tomar decisiones moralmente cuestionables, y expandir tu negocio mientras descubres los misterios de la aldea y buscas la manera de volver a casa.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AP4SA",
+    "region": "US",
+    "titulo": "Guns, Gore and Cannoli 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Run and gun", "Acción", "Plataformas"],
+    "sinopsis": "La secuela del frenético run and gun ambientado en los años 20. Vinnie Cannoli regresa en una misión para salvar a su amigo, enfrentándose a hordas de mafiosos y zombies en escenarios destructibles. Con un estilo visual de dibujos animados y acción desenfrenada para uno o dos jugadores.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BM2WA",
+    "region": "US",
+    "titulo": "Guns of Fury",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Run and gun", "Acción", "Metroidvania"],
+    "sinopsis": "Un juego de acción y plataformas que combina el run and gun clásico con la exploración no lineal de un metroidvania. En un mundo steampunk, deberás abrirte camino a tiros, mejorar tu arsenal y enfrentarte a jefes gigantescos mientras descubres una conspiración.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AY9RA",
+    "region": "US",
+    "titulo": "Hades",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Roguelike", "Acción", "Hack and slash"],
+    "sinopsis": "Un roguelike de acción de los creadores de Bastion y Transistor. Encarnas a Zagreo, el príncipe del Inframundo, que intenta escapar del reino de su padre Hades con la ayuda de los dioses del Olimpo. Cada intento de fuga es una nueva oportunidad para descubrir más sobre la historia y los personajes.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BA3FA",
+    "region": "US",
+    "titulo": "Hades II",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2025",
+    "genero": ["Roguelike", "Acción", "Hack and slash"],
+    "sinopsis": "La secuela directa de Hades. En esta ocasión controlas a Melínoe, la hermana de Zagreo, en su lucha contra el Titán Cronos. Con nuevas armas, poderes mágicos y la ayuda de dioses olímpicos, deberás abrirte camino a través del Inframundo en una aventura roguelike aún más ambiciosa.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A4T3A",
+    "region": "US",
+    "titulo": "Hello Neighbor 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Terror", "Sigilo", "Aventura"],
+    "sinopsis": "La secuela del juego de terror y sigilo. Eres un periodista que investiga la desaparición de varias personas en la ciudad de Raven Brooks. Deberás infiltrarte en las casas de los vecinos, resolver puzles y evitar ser descubierto por el Sr. Peterson, un vecino con un oscuro secreto.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AUSUA",
+    "region": "US",
+    "titulo": "Hollow Knight: Silksong",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2025",
+    "genero": ["Metroidvania", "Acción", "Plataformas"],
+    "sinopsis": "La esperada secuela de Hollow Knight. Controlas a Hornet, la princesa protectora de Hallownest, en una aventura a través de un nuevo reino llamado Pharloom. Con un combate más ágil y rápido, nuevos enemigos y secretos por descubrir, Silksong expande el universo del aclamado metroidvania.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXEAA",
+    "region": "US",
+    "titulo": "Hyrule Warriors: Age of Calamity",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Hack and slash", "Acción", "Musou"],
+    "sinopsis": "Un juego de acción musou ambientado en el universo de The Legend of Zelda: Breath of the Wild. Revive los eventos que llevaron al Gran Cataclismo, 100 años antes de los hechos del juego original. Controla a Link, Zelda, los Campeones y otros personajes en batallas contra hordas de enemigos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AU84B",
+    "region": "US",
+    "titulo": "Immortals Fenyx Rising",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Acción", "Aventura", "Mundo abierto"],
+    "sinopsis": "Una aventura de mundo abierto inspirada en la mitología griega. Encarnas a Fenyx, un héroe alado que debe salvar a los dioses del Olimpo de una maldición. Explora un mundo lleno de mitos, resuelve puzles, lucha contra criaturas mitológicas y descubre una historia con un tono humorístico.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXQBA",
+    "region": "US",
+    "titulo": "Inmost",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Plataformas", "Terror", "Puzles"],
+    "sinopsis": "Un juego de plataformas y puzles con una atmósfera de terror gótico. A través de tres personajes interconectados, explora un mundo oscuro y melancólico lleno de secretos y criaturas siniestras, en una historia que aborda temas como el dolor y la pérdida.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AMWDA",
+    "region": "US",
+    "titulo": "INSIDE",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Plataformas", "Puzles", "Aventura"],
+    "sinopsis": "De los creadores de Limbo, un juego de plataformas y puzles con una atmósfera opresiva y misteriosa. Controlas a un niño que debe escapar de un mundo distópico y controlado, resolviendo puzles ambientales y evitando peligros en una historia que se cuenta sin palabras.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A7GSR",
+    "region": "US",
+    "titulo": "It Takes Two",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Plataformas", "Cooperativo", "Aventura"],
+    "sinopsis": "Una aventura cooperativa diseñada exclusivamente para dos jugadores. Encarnas a Cody y May, una pareja en crisis que es transformada en muñecos por un libro mágico. Juntos deberán superar ingeniosos niveles de plataformas y puzles para volver a ser humanos y salvar su relación.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AS7YA",
+    "region": "US",
+    "titulo": "Katana ZERO",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Acción", "Plataformas", "Hack and slash"],
+    "sinopsis": "Un juego de acción neo-noir con un estilo visual llamativo y una banda sonora synthwave. Eres un asesino a sueldo que puede manipular el tiempo, enfrentándose a enemigos en combates rápidos y letales donde un solo golpe puede ser mortal. La historia se desarrolla en un mundo distópico lleno de secretos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ARZGA",
+    "region": "US",
+    "titulo": "Kirby and the Forgotten Land",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Plataformas 3D", "Aventura"],
+    "sinopsis": "La primera aventura de Kirby en 3D. La bola rosa es transportada a un mundo misterioso lleno de ruinas de una civilización pasada. Con sus habilidades de copia y la nueva capacidad de absorber objetos grandes, Kirby deberá rescatar a los Waddle Dees y descubrir los secretos de este mundo olvidado.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AH26A",
+    "region": "US",
+    "titulo": "Kirby Star Allies",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Plataformas", "Aventura"],
+    "sinopsis": "Kirby regresa en una aventura de plataformas 2D donde puede lanzar corazones para reclutar enemigos como aliados. Con un cooperativo para hasta cuatro jugadores, combina las habilidades de los aliados para resolver puzles y derrotar a los jefes en un colorido mundo.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A2JYA",
+    "region": "US",
+    "titulo": "Kirby's Return to Dream Land Deluxe",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["Plataformas", "Aventura"],
+    "sinopsis": "La remasterización del clásico de Wii. Kirby y sus amigos deben ayudar a Magolor a reparar su nave, el Lor Starcutter, recuperando las piezas perdidas en diferentes mundos. Incluye nuevas habilidades de copia y un modo multijugador para cuatro jugadores.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ATHJC",
+    "region": "US",
+    "titulo": "LEGO Star Wars: The Skywalker Saga",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Acción", "Aventura", "LEGO"],
+    "sinopsis": "La recopilación definitiva de las nueve películas principales de Star Wars en formato LEGO. Revive la saga completa con un humor característico, más de 300 personajes jugables y la libertad de explorar una galaxia llena de planetas y secretos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AMWCA",
+    "region": "US",
+    "titulo": "Limbo",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Plataformas", "Puzles", "Aventura"],
+    "sinopsis": "Un juego de plataformas y puzles en blanco y negro con una atmósfera inquietante. Controlas a un niño que busca a su hermana en un mundo hostil y misterioso, resolviendo puzles ambientales y evitando trampas mortales en una experiencia corta pero inolvidable.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AEB8A",
+    "region": "US",
+    "titulo": "Little Nightmares",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Terror", "Puzles", "Plataformas"],
+    "sinopsis": "Un juego de terror y puzles con una estética macabra y surrealista. Controlas a Six, una niña con impermeable amarillo, que debe escapar de 'The Maw', un lugar flotante lleno de criaturas grotescas. La tensión y la atmósfera opresiva son las claves de esta inquietante aventura.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AU56A",
+    "region": "US",
+    "titulo": "Little Nightmares II",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Terror", "Puzles", "Plataformas"],
+    "sinopsis": "La precuela de Little Nightmares. Controlas a Mono, un niño con una bolsa en la cabeza, que junto a Six debe atravesar un mundo retorcido y aterrador para detener la transmisión que corrompe a los adultos. Un juego de terror y puzles con una atmósfera aún más inquietante.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BANRA",
+    "region": "US",
+    "titulo": "Luigi's Mansion 2 HD",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Aventura", "Acción", "Puzles"],
+    "sinopsis": "La remasterización en HD de Luigi's Mansion: Dark Moon. Luigi debe explorar varias mansiones embrujadas para recuperar los fragmentos de la Luna Oscura y salvar a los residentes de Villa Villa. Con la ayuda del Poltergust 5000, deberás capturar fantasmas, resolver puzles y superar sustos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AG3JA",
+    "region": "US",
+    "titulo": "Luigi's Mansion 3",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Aventura", "Acción", "Puzles"],
+    "sinopsis": "Luigi y sus amigos son invitados a un lujoso hotel, pero todo resulta ser una trampa del Rey Boo. Ahora deberás explorar los diferentes pisos del hotel, capturar fantasmas con el Poltergust G-0, resolver puzles y rescatar a Mario y a los demás en esta divertida aventura de terror.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A8N6A",
+    "region": "US",
+    "titulo": "MADiSON",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Terror", "Supervivencia", "Puzles"],
+    "sinopsis": "Un juego de terror psicológico en primera persona. Eres Luca, un joven atrapado en una casa embrujada que debe usar una cámara instantánea para interactuar con el más allá y descubrir la verdad sobre su pasado. La tensión, los sustos y la resolución de puzles son sus pilares.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A8E6A",
+    "region": "US",
+    "titulo": "Mario & Luigi: Brothership",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["RPG", "Aventura", "Plataformas"],
+    "sinopsis": "Una nueva entrega de la saga de RPG de Mario y Luigi. Los hermanos son transportados a un mundo llamado Concordia, donde deberán unir islas y restaurar la energía para salvar el reino. Con un sistema de combate por turnos que combina acción y estrategia, y un humor característico.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ARQPA",
+    "region": "US",
+    "titulo": "Mario and Sonic at the Olympic Games Tokyo 2020",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Deportes", "Fiesta", "Minijuegos"],
+    "sinopsis": "La colaboración entre Mario y Sonic en los Juegos Olímpicos de Tokio 2020. Compite en una gran variedad de deportes olímpicos, desde atletismo hasta natación o baloncesto, con controles sencillos y la posibilidad de jugar en solitario o con amigos en modos multijugador.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AT9HA",
+    "region": "US",
+    "titulo": "Mario Golf: Super Rush",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Deportes", "Golf"],
+    "sinopsis": "La entrega de golf de la saga Mario. Disfruta de partidas de golf con los personajes del universo Mario, con un modo historia, campos variados y la posibilidad de jugar con hasta cuatro jugadores. Incluye el modo 'Golf a toda velocidad', una versión frenética y divertida del deporte.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AABPB",
+    "region": "US",
+    "titulo": "Mario Kart 8 Deluxe",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Carreras", "Fiesta"],
+    "sinopsis": "La versión definitiva de Mario Kart 8, el juego de carreras más vendido de la saga. Incluye todos los circuitos y personajes del original, además del modo batalla y la posibilidad de jugar con hasta 8 jugadores. Su jugabilidad accesible pero profunda lo convierte en un imprescindible.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ALERA",
+    "region": "US",
+    "titulo": "Mario Tennis Aces",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Deportes", "Tenis"],
+    "sinopsis": "La entrega de tenis de la saga Mario. Con un modo historia, torneos y una gran variedad de personajes, ofrece un sistema de juego accesible pero con profundidad estratégica, incluyendo golpes especiales y medidores de energía. Ideal para jugar en solitario o con amigos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A97PA",
+    "region": "US",
+    "titulo": "Mario vs. Donkey Kong",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Puzles", "Plataformas"],
+    "sinopsis": "La remasterización del clásico de Game Boy Advance. Mario debe rescatar a los Mini-Marios secuestrados por Donkey Kong, resolviendo puzles y superando niveles de plataformas en un juego que combina ingenio y habilidad. Incluye nuevos niveles y modos de juego.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A2G7B",
+    "region": "US",
+    "titulo": "Mario + Rabbids Sparks of Hope",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Estrategia por turnos", "Aventura", "RPG"],
+    "sinopsis": "La secuela del crossover entre Mario y los Rabbids. Un malvado ser llamado Cursa está absorbiendo la energía de las Sparks, unas criaturas luminosas. Mario y sus amigos deberán viajar por diferentes planetas para rescatarlas, con un sistema de combate por turnos más dinámico y libre que el original.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ALGCA",
+    "region": "US",
+    "titulo": "Mega Man 11",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Acción", "Plataformas", "Run and gun"],
+    "sinopsis": "El regreso de Mega Man en una nueva entrega numerada. Con un estilo visual 2.5D, Mega Man debe enfrentarse a los Robot Masters y detener los planes del Dr. Wily. Incluye la habilidad 'Doble Engranaje', que ralentiza el tiempo y potencia los ataques, añadiendo una nueva capa de estrategia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AZPWA",
+    "region": "US",
+    "titulo": "METAL SLUG 1st & 2nd MISSION Double Pack",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Run and gun", "Acción", "Arcade"],
+    "sinopsis": "Una recopilación que incluye METAL SLUG y METAL SLUG 2, dos clásicos del run and gun de Neo Geo. Dispara a hordas de enemigos, rescata rehenes y utiliza un arsenal de armas y vehículos en una acción frenética que definió el género arcade.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AYL8A",
+    "region": "US",
+    "titulo": "Metroid Dread",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Metroidvania", "Acción", "Plataformas"],
+    "sinopsis": "El regreso de Samus Aran en una nueva entrega 2D de la saga principal. En el planeta ZDR, Samus deberá enfrentarse a los temibles E.M.M.I., robots que la persiguen implacablemente. Con un mapa interconectado, nuevas habilidades y una atmósfera de tensión constante, es un metroidvania moderno y desafiante.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A3SDA",
+    "region": "US",
+    "titulo": "Metroid Prime Remastered",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["FPS", "Aventura", "Metroidvania"],
+    "sinopsis": "La remasterización del aclamado Metroid Prime de GameCube. Controlas a Samus Aran en primera persona, explorando un planeta alienígena lleno de secretos, resolviendo puzles y enfrentándote a criaturas hostiles. Con controles modernos y un apartado visual mejorado, es la forma definitiva de disfrutar de este clásico.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AEUCA",
+    "region": "US",
+    "titulo": "Minecraft",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Sandbox", "Construcción", "Supervivencia"],
+    "sinopsis": "El fenómeno mundial de construcción y supervivencia. Explora un mundo infinito generado proceduralmente, construye cualquier cosa que imagines y sobrevive a las noches enfrentándote a criaturas hostiles. Con modos creativo y supervivencia, y la posibilidad de jugar con amigos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A8WRJ",
+    "region": "US",
+    "titulo": "Mortal Kombat 1: Definitive Edition",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2025",
+    "genero": ["Lucha", "Acción"],
+    "sinopsis": "La entrega más reciente de la icónica saga de lucha. Reinicia el universo de Mortal Kombat con nuevos personajes y un sistema de combate renovado. La Definitive Edition incluye el juego base y todos los contenidos descargables, como nuevos luchadores y trajes.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXSEB",
+    "region": "US",
+    "titulo": "MONSTER HUNTER RISE",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["RPG de acción", "Caza", "Mundo abierto"],
+    "sinopsis": "La entrega de Monster Hunter para Switch. Como cazador, deberás explorar la aldea de Kamura y sus alrededores, cazando monstruos gigantescos y recolectando materiales para crear armas y armaduras. Incluye la nueva mecánica 'Wirebug', que permite desplazarse por el aire y realizar ataques especiales.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BHEWA",
+    "region": "US",
+    "titulo": "Moss: The Forgotten Relic",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2026",
+    "genero": ["Aventura", "Puzles", "Realidad virtual"],
+    "sinopsis": "Una aventura de puzles y exploración protagonizada por un pequeño ratón llamado Quill. Acompaña a Quill en su viaje para salvar a su tío y restaurar la magia de un mundo antiguo, resolviendo puzles ambientales y enfrentándose a enemigos en una experiencia encantadora y accesible.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A9VZB",
+    "region": "US",
+    "titulo": "NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["Lucha", "Acción", "Anime"],
+    "sinopsis": "La entrega más ambiciosa de la saga Ultimate Ninja Storm. Revive la historia de Naruto y Boruto con un roster de más de 130 personajes y combates espectaculares. Incluye un modo historia original que conecta los eventos de Naruto Shippuden con Boruto: Naruto Next Generations.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXVXA",
+    "region": "US",
+    "titulo": "Need for Speed Hot Pursuit Remastered",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Carreras", "Arcade"],
+    "sinopsis": "La remasterización del aclamado juego de carreras y persecuciones. Elige el bando de los policías o los corredores en emocionantes persecuciones a alta velocidad. Incluye todos los DLCs y un modo multijugador multiplataforma, con gráficos mejorados y la misma jugabilidad adictiva.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ARFTA",
+    "region": "US",
+    "titulo": "New Pokémon Snap",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Aventura", "Simulación", "Fotografía"],
+    "sinopsis": "La secuela del clásico de Nintendo 64. Explora la región de Lental y fotografía a los Pokémon en su hábitat natural. Con nuevos escenarios, Pokémon y mecánicas, deberás capturar las mejores instantáneas para ayudar a la investigación del profesor Mirror y descubrir el misterio de los Pokémon luminosos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A532B",
+    "region": "US",
+    "titulo": "NieR: Automata The End of YoRHa Edition",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["RPG de acción", "Hack and slash", "Ciencia ficción"],
+    "sinopsis": "La aclamada obra de Yoko Taro llega a Switch. En un futuro lejano, los androides 2B, 9S y A2 luchan contra una invasión de máquinas alienígenas. Con múltiples finales, un combate dinámico y una historia profunda que explora la naturaleza de la humanidad, es una experiencia inolvidable.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A7BNA",
+    "region": "US",
+    "titulo": "Nine Sols",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Metroidvania", "Acción", "Plataformas"],
+    "sinopsis": "Un desafiante metroidvania de acción con un sistema de combate basado en el parry. En un mundo inspirado en la mitología y la estética taoísta, controlas a Yi, un héroe vengativo que debe enfrentarse a los Nueve Soles, poderosos semidioses, para restaurar el equilibrio.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AZGJC",
+    "region": "US",
+    "titulo": "Ninja Gaiden Sigma",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Acción", "Hack and slash", "Ninjas"],
+    "sinopsis": "La versión mejorada del clásico Ninja Gaiden de Xbox. Controlas a Ryu Hayabusa, un ninja que busca vengar la destrucción de su clan. Con un combate rápido y letal, y un nivel de dificultad legendario, es uno de los mejores exponentes del género hack and slash.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AZGJC",
+    "region": "US",
+    "titulo": "Ninja Gaiden Sigma 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Acción", "Hack and slash", "Ninjas"],
+    "sinopsis": "La versión mejorada de Ninja Gaiden II. Ryu Hayabusa regresa para detener a un ejército de demonios y vengar la destrucción de su clan. Con un combate aún más sangriento y ágil, y la posibilidad de controlar a otros personajes, es una secuela superior al original.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AZGJC",
+    "region": "US",
+    "titulo": "Ninja Gaiden 3: Razor's Edge",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Acción", "Hack and slash", "Ninjas"],
+    "sinopsis": "La versión mejorada de Ninja Gaiden 3. Ryu Hayabusa se enfrenta a una organización terrorista que ha secuestrado a su clan. Con un combate más visceral y la inclusión de nuevas armas y personajes jugables, Razor's Edge mejora notablemente la experiencia del juego original.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AU4HB",
+    "region": "US",
+    "titulo": "Nintendo 64 - Nintendo Switch Online",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Recopilatorio", "Retro"],
+    "sinopsis": "Un servicio de suscripción que permite acceder a un catálogo en constante crecimiento de clásicos de Nintendo 64. Incluye juegos icónicos como Super Mario 64, The Legend of Zelda: Ocarina of Time y Mario Kart 64, con la posibilidad de jugar en línea y guardar partidas.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AS8SA",
+    "region": "US",
+    "titulo": "Nintendo Switch Sports",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Deportes", "Fiesta"],
+    "sinopsis": "El sucesor espiritual de Wii Sports. Utiliza los Joy-Con para jugar a deportes como tenis, bádminton, bolos, fútbol, voleibol y chambara. Con controles de movimiento intuitivos y la posibilidad de jugar en línea, es perfecto para toda la familia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AWAYB",
+    "region": "US",
+    "titulo": "Ori and the Will of the Wisps",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Metroidvania", "Plataformas", "Aventura"],
+    "sinopsis": "La secuela de Ori and the Blind Forest. Ori emprende un nuevo viaje para descubrir su verdadero destino y salvar el bosque de una nueva amenaza. Con un apartado visual impresionante, una banda sonora emotiva y un combate más profundo, es una obra maestra del género metroidvania.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ALDLA",
+    "region": "US",
+    "titulo": "Outlast 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Terror", "Supervivencia"],
+    "sinopsis": "La secuela del aterrador Outlast. Eres Blake Langermann, un periodista que investiga el asesinato de una mujer embarazada en el desierto de Arizona. Pronto se verá atrapado en una comunidad rural dominada por una secta religiosa, donde deberá sobrevivir usando solo una cámara de video.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AKXEA",
+    "region": "US",
+    "titulo": "Overcooked! 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Simulación", "Cooperativo", "Fiesta"],
+    "sinopsis": "La secuela del caótico juego de cocina cooperativo. Los chefs deben preparar y servir platos en cocinas cada vez más absurdas y peligrosas, como camiones en movimiento o naves espaciales. La comunicación y la coordinación son clave para superar los niveles y obtener la máxima puntuación.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXU5A",
+    "region": "US",
+    "titulo": "Overcooked! All You Can Eat",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Simulación", "Cooperativo", "Fiesta"],
+    "sinopsis": "La recopilación definitiva de Overcooked! y Overcooked! 2, con todos los contenidos descargables y mejoras técnicas. Incluye más de 200 niveles, nuevos chefs y la posibilidad de jugar en línea con hasta cuatro jugadores. La experiencia completa para los amantes de la cocina caótica.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ARUUA",
+    "region": "US",
+    "titulo": "Paper Mario: The Origami King",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["RPG", "Aventura", "Puzles"],
+    "sinopsis": "Mario deberá salvar el Reino Champiñón de una invasión de origami liderada por el Rey Olly. Con un sistema de combate basado en anillos giratorios y puzles, explora un mundo de papel lleno de humor y personajes entrañables, en una nueva entrega de la saga Paper Mario.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A9QDA",
+    "region": "US",
+    "titulo": "Paper Mario: The Thousand-Year Door",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["RPG", "Aventura"],
+    "sinopsis": "La remasterización del aclamado RPG de GameCube. Mario deberá encontrar las siete Estrellas de Cristal para abrir la Puerta Milenaria y salvar a la Princesa Peach. Con un sistema de combate por turnos con acción y una historia llena de humor y personajes memorables, es considerado uno de los mejores de la saga.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A4TPA",
+    "region": "US",
+    "titulo": "Persona 3 Portable",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["RPG", "Novela visual", "Simulación social"],
+    "sinopsis": "La versión portátil de Persona 3, uno de los RPG más aclamados de la saga. Como estudiante transferido, deberás equilibrar tu vida escolar y social con la exploración de una torre misteriosa durante la 'Hora Oscura'. Incluye la opción de elegir protagonista masculino o femenino.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A4TQA",
+    "region": "US",
+    "titulo": "Persona 4 Golden",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["RPG", "Novela visual", "Simulación social"],
+    "sinopsis": "La versión mejorada de Persona 4. Un grupo de estudiantes investiga una serie de asesinatos misteriosos en el pueblo rural de Inaba, adentrándose en un mundo alternativo a través de la televisión. Con una historia absorbente, personajes carismáticos y un sistema de combate por turnos, es una obra cumbre del género.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A42UC",
+    "region": "US",
+    "titulo": "Persona 5 Royal",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["RPG", "Novela visual", "Simulación social"],
+    "sinopsis": "La versión definitiva de Persona 5. Como un estudiante con un pasado problemático, te unirás a los 'Ladrones Fantasma' para cambiar los corazones de adultos corruptos. Con un estilo visual único, una banda sonora inolvidable y un sistema de combate por turnos pulido, es una experiencia imprescindible.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ATY8A",
+    "region": "US",
+    "titulo": "PICO PARK",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Puzles", "Cooperativo", "Fiesta"],
+    "sinopsis": "Un juego de puzles cooperativo para hasta ocho jugadores. Cada nivel requiere que todos los jugadores trabajen juntos, usando sus cuerpos y habilidades para superar obstáculos y alcanzar la meta. Su simplicidad y su enfoque en la comunicación lo convierten en un éxito en grupo.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AT3EA",
+    "region": "US",
+    "titulo": "Pokémon Café Mix",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Puzles", "Simulación", "Gestión"],
+    "sinopsis": "Un juego de puzles y gestión de un café Pokémon. Como dueño de un café, deberás preparar bebidas y platos para los clientes Pokémon, resolviendo puzles de enlazar iconos. A medida que avances, podrás ampliar el café y atraer a más Pokémon.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ALZLA",
+    "region": "US",
+    "titulo": "Pokémon Legends: Z-A",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2026",
+    "genero": ["RPG", "Aventura", "Mundo abierto"],
+    "sinopsis": "Una nueva entrega de la saga Legends, ambientada en la ciudad de Luminalia. Con un enfoque en la exploración urbana y la captura de Pokémon en un entorno abierto, promete una experiencia renovada para la franquicia, con nuevas mecánicas y una historia centrada en la transformación de la ciudad.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ALZYA",
+    "region": "US",
+    "titulo": "Pokémon Violet",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["RPG", "Aventura", "Mundo abierto"],
+    "sinopsis": "Una de las dos versiones de la novena generación de Pokémon. Explora la región de Paldea en un mundo abierto, captura y entrena Pokémon, y enfréntate a los líderes de gimnasio y al Team Star. Con un enfoque cooperativo y la posibilidad de explorar libremente, es la entrega más ambiciosa de la saga.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AQ42A",
+    "region": "US",
+    "titulo": "Pokémon Mystery Dungeon: Rescue Team DX",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Roguelike", "RPG", "Aventura"],
+    "sinopsis": "La remasterización de los clásicos Pokémon Mystery Dungeon de Game Boy Advance y DS. Conviértete en un Pokémon y forma un equipo de rescate para ayudar a otros Pokémon en apuros, explorando mazmorras generadas proceduralmente y descubriendo una emotiva historia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A97WA",
+    "region": "US",
+    "titulo": "Prince of Persia: The Lost Crown",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Metroidvania", "Acción", "Plataformas"],
+    "sinopsis": "Un nuevo capítulo de la saga Prince of Persia con un enfoque metroidvania. Controlas a Sargón, un guerrero inmortal, en su misión de rescatar al príncipe en la montaña maldita de Qaf. Con un combate ágil, puzles ambientales y una exploración no lineal, es una reinvención exitosa de la franquicia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ACVKA",
+    "region": "US",
+    "titulo": "Rayman Legends: Definitive Edition",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Plataformas", "Aventura", "Cooperativo"],
+    "sinopsis": "La versión definitiva del aclamado Rayman Legends. Con un apartado artístico espectacular y una jugabilidad de plataformas precisa, Rayman y sus amigos deben salvar el Glade of Dreams de los Dark Teensies. Incluye niveles musicales, cooperativo para cuatro jugadores y el modo Kung Foot.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BAF2A",
+    "region": "US",
+    "titulo": "Red Dead Redemption",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["Acción", "Aventura", "Mundo abierto"],
+    "sinopsis": "La llegada del clásico de Rockstar a Switch. Encarna a John Marston, un antiguo forajido que debe cazar a los miembros de su antigua banda para salvar a su familia. Con un mundo abierto lleno de vida, misiones memorables y un western crepuscular, es una obra maestra de la generación PS3/Xbox 360.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AQ78B",
+    "region": "US",
+    "titulo": "Resident Evil 4",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Terror", "Acción", "Supervivencia"],
+    "sinopsis": "La versión de Switch del aclamado Resident Evil 4. Leon S. Kennedy, ahora agente del gobierno, es enviado a una aldea rural de Europa para rescatar a la hija del presidente. Con un sistema de combate innovador y una atmósfera tensa, es considerado uno de los mejores juegos de la historia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ASLQA",
+    "region": "US",
+    "titulo": "Resident Evil 6",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Terror", "Acción", "Supervivencia"],
+    "sinopsis": "La entrega más orientada a la acción de la saga. Cuatro campañas interconectadas con diferentes protagonistas, como Leon, Chris y Jake, que deben enfrentarse a una crisis bioterrorista global. Con un sistema de combate más ágil y espectacular, ofrece una experiencia intensa y cinematográfica.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ACC3A",
+    "region": "US",
+    "titulo": "Resident Evil Revelations 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Terror", "Acción", "Supervivencia"],
+    "sinopsis": "La secuela de Revelations. Claire Redfield y Moira Burton son secuestradas y llevadas a una isla abandonada, donde deberán sobrevivir a criaturas mutantes y descubrir la verdad tras los experimentos. Con un enfoque episódico y un modo cooperativo, es una entrega sólida y atmosférica.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A74QB",
+    "region": "US",
+    "titulo": "Rune Factory 3 Special",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["RPG", "Simulación", "Farming"],
+    "sinopsis": "La remasterización de Rune Factory 3. Como un joven con la habilidad de transformarse en un monstruo, deberás equilibrar tu vida en la granja, la exploración de mazmorras y las relaciones sociales con los habitantes del pueblo. Una mezcla única de RPG de acción y simulación de vida.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BEWEB",
+    "region": "US",
+    "titulo": "Rune Factory: Guardians of Azuma",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2025",
+    "genero": ["RPG", "Simulación", "Farming"],
+    "sinopsis": "Una nueva entrega de la saga Rune Factory ambientada en el país de Azuma, inspirado en el Japón feudal. Como un 'Earth Dancer', deberás restaurar la tierra, cultivar cosechas, luchar contra monstruos y construir relaciones con los aldeanos, todo en un mundo lleno de magia y tradición.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A2RCA",
+    "region": "US",
+    "titulo": "Salt and Sacrifice",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Metroidvania", "RPG de acción", "Soulslike"],
+    "sinopsis": "La secuela de Salt and Sanctuary. Como un 'Marked Inquisitor', deberás cazar a poderosos magos corruptos en un mundo sombrío y desafiante. Con un combate estilo soulslike, exploración no lineal y un sistema de progresión profundo, es una experiencia exigente y gratificante.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AZFQA",
+    "region": "US",
+    "titulo": "Sea of Solitude: The Director's Cut",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Aventura", "Exploración", "Narrativo"],
+    "sinopsis": "Una aventura introspectiva que aborda temas como la soledad y la salud mental. Controlas a Kay, una joven que se ha transformado en un monstruo, y que deberá explorar un mundo inundado para descubrir la causa de su transformación y encontrar la manera de revertirla. Una experiencia emotiva y visualmente bella.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A6G7A",
+    "region": "US",
+    "titulo": "Sea of Stars",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["RPG", "Aventura", "Combate por turnos"],
+    "sinopsis": "Un RPG inspirado en los clásicos del género. Dos Niños del Solsticio, Valere y Zale, deben unir sus fuerzas para derrotar a los esbirros de un alquimista malvado. Con un sistema de combate por turnos que combina la estrategia con la acción, y un apartado visual pixel art espectacular, es una carta de amor a los RPG clásicos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AB7PA",
+    "region": "US",
+    "titulo": "Shovel Knight: Treasure Trove",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Plataformas", "Acción", "Retro"],
+    "sinopsis": "La recopilación definitiva de Shovel Knight, que incluye el juego original y todas sus expansiones. Con un estilo visual de 8 bits y una jugabilidad de plataformas precisa, deberás superar niveles llenos de enemigos y jefes, usando tu pala como arma y herramienta. Un homenaje a los clásicos de NES.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A7XDA",
+    "region": "US",
+    "titulo": "Sifu",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Acción", "Lucha", "Beat 'em up"],
+    "sinopsis": "Un juego de artes marciales con un sistema de combate basado en el aprendizaje y la venganza. Como un joven estudiante de kung fu, deberás vengar a tu familia enfrentándote a hordas de enemigos. Cada muerte te hace envejecer, pero también te permite desbloquear nuevas habilidades y atajos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A896B",
+    "region": "US",
+    "titulo": "SIGNALIS",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Terror", "Supervivencia", "Ciencia ficción"],
+    "sinopsis": "Un juego de terror y supervivencia con una estética retro de ciencia ficción. Eres Elster, una técnica que despierta en una nave espacial abandonada y debe investigar la desaparición de su compañera. Con puzles, combate limitado y una atmósfera opresiva, es una obra maestra del terror psicológico.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A24HA",
+    "region": "US",
+    "titulo": "Skul: The Hero Slayer",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Roguelike", "Acción", "Plataformas"],
+    "sinopsis": "Un roguelike de acción en el que controlas a Skul, un pequeño esqueleto que puede cambiar de cabeza para obtener diferentes habilidades y estilos de combate. El ejército del Rey Demonio ha sido derrotado y ahora Skul debe rescatar a su rey de los humanos en una aventura desafiante y adictiva.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXQ6B",
+    "region": "US",
+    "titulo": "Sonic Colors Ultimate",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Plataformas", "Acción", "Velocidad"],
+    "sinopsis": "La remasterización del aclamado Sonic Colors de Wii. Sonic llega a un parque de atracciones espacial construido por el Dr. Eggman, donde descubre que está capturando a los Wisps, unas criaturas alienígenas. Con las habilidades de los Wisps, Sonic deberá liberarlos y detener los planes de Eggman.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ABD7A",
+    "region": "US",
+    "titulo": "Sonic Mania",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Plataformas", "Acción", "Velocidad"],
+    "sinopsis": "Un homenaje a los clásicos de Sonic de Mega Drive. Con un estilo visual de 16 bits y una jugabilidad de plataformas rápida y precisa, Sonic, Tails y Knuckles deberán detener los planes del Dr. Eggman en una aventura llena de niveles nuevos y remezclas de zonas clásicas.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AQW9A",
+    "region": "US",
+    "titulo": "Soul Knight",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Roguelike", "Acción", "Shooter"],
+    "sinopsis": "Un roguelike de acción con disparos y mazmorras generadas proceduralmente. Elige entre una gran variedad de personajes, cada uno con habilidades únicas, y explora mazmorras llenas de enemigos y jefes para recuperar la piedra mágica que mantiene el equilibrio del mundo. Ideal para partidas cortas y cooperativo.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AUQEA",
+    "region": "US",
+    "titulo": "Spiritfarer",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Gestión", "Aventura", "Simulación"],
+    "sinopsis": "Un juego de gestión y aventura sobre la muerte y la despedida. Eres Stella, una barquera que transporta a las almas de los difuntos al más allá. Construye y mejora tu barco, cultiva alimentos, cuida de tus pasajeros y ayúdalos a encontrar la paz en una experiencia emotiva y relajante.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ACPGB",
+    "region": "US",
+    "titulo": "Stardew Valley",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Simulación", "RPG", "Farming"],
+    "sinopsis": "Un fenómeno indie que revitalizó el género de simulación agrícola. Heredas una granja en ruinas y deberás restaurarla, cultivando cosechas, criando animales, explorando minas y construyendo relaciones con los habitantes del pueblo. Un juego profundo y adictivo con un encanto único.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ANWSA",
+    "region": "US",
+    "titulo": "Stick Fight: The Game",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Fiesta", "Lucha", "Multijugador"],
+    "sinopsis": "Un juego de lucha multijugador con físicas caóticas y personajes stickman. Con una gran variedad de armas y niveles generados proceduralmente, el objetivo es simple: ser el último en pie. Su humor y su ritmo frenético lo convierten en un éxito para partidas rápidas con amigos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BH5NA",
+    "region": "US",
+    "titulo": "Stray",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Aventura", "Exploración", "Puzles"],
+    "sinopsis": "Una aventura protagonizada por un gato callejero en una ciudad ciberpunk. Sepárate de tu familia y explora un mundo lleno de robots y secretos, resolviendo puzles y ayudando a los habitantes para encontrar el camino de vuelta a casa. Una experiencia única y emotiva.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AYU2A",
+    "region": "US",
+    "titulo": "Sudoku Relax 5 Full Bloom",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Puzles", "Sudoku"],
+    "sinopsis": "Una entrega de la serie Sudoku Relax con una temática floral. Disfruta de cientos de puzles de sudoku de diferentes dificultades en un entorno relajante y visualmente agradable. Ideal para los amantes de los puzles que buscan una experiencia tranquila.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AVP3A",
+    "region": "US",
+    "titulo": "Super Mario 3D All-Stars",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Plataformas 3D", "Recopilatorio"],
+    "sinopsis": "Una recopilación que celebra el 35 aniversario de Super Mario. Incluye versiones mejoradas de Super Mario 64, Super Mario Sunshine y Super Mario Galaxy, tres de los juegos más influyentes de la saga. Con controles adaptados y bandas sonoras remasterizadas, es un viaje por la historia del fontanero.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AUZPA",
+    "region": "US",
+    "titulo": "Super Mario 3D World + Bowser's Fury",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Plataformas 3D", "Aventura"],
+    "sinopsis": "La versión de Switch de Super Mario 3D World, que incluye el juego original y la nueva expansión Bowser's Fury. En 3D World, Mario y sus amigos deben rescatar a las Sprixies en niveles de plataformas 3D con trajes especiales. En Bowser's Fury, Mario explora un mundo abierto para detener a un Bowser gigante y furioso.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ADALA",
+    "region": "US",
+    "titulo": "Super Mario 64",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Plataformas 3D"],
+    "sinopsis": "El clásico de Nintendo 64 que definió el género de plataformas 3D. Mario debe rescatar a la Princesa Peach y recuperar las 120 estrellas del castillo de Bowser. Con un diseño de niveles revolucionario y un control preciso, sigue siendo una obra maestra atemporal. Incluido en Super Mario 3D All-Stars.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ADALB",
+    "region": "US",
+    "titulo": "Super Mario Bros. U Deluxe",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Plataformas 2D"],
+    "sinopsis": "La versión de Switch de New Super Mario Bros. U y su expansión New Super Luigi U. Disfruta de más de 160 niveles de plataformas 2D con Mario, Luigi, Toadette y Nabbit. Con un multijugador para hasta cuatro jugadores, es una experiencia clásica y divertida para toda la familia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AQMXA",
+    "region": "US",
+    "titulo": "Super Mario Bros. Wonder",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["Plataformas 2D"],
+    "sinopsis": "La nueva entrega de plataformas 2D de Mario. Viaja al Reino Flor y descubre el poder de las Flores Maravilla, que transforman el mundo y la jugabilidad de formas sorprendentes. Con nuevos personajes, elefantes, burbujas y un multijugador cooperativo, es una reinvención fresca y colorida de la saga.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BAAQA",
+    "region": "US",
+    "titulo": "Super Mario Maker 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Plataformas", "Creación", "Puzles"],
+    "sinopsis": "La secuela del juego de creación de niveles de Mario. Con nuevas herramientas, temas y modos, puedes diseñar tus propios niveles y compartirlos con jugadores de todo el mundo. Incluye un modo historia, un modo cooperativo y la posibilidad de jugar a los niveles creados por otros.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AAACA",
+    "region": "US",
+    "titulo": "Super Mario Odyssey",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Plataformas 3D", "Aventura"],
+    "sinopsis": "Mario viaja por diferentes reinos para rescatar a la Princesa Peach de Bowser, quien planea casarse con ella. Con la ayuda de Cappy, un sombrero viviente, Mario puede poseer a enemigos y objetos para superar obstáculos y encontrar lunas de poder en una de las aventuras más creativas y aclamadas de la saga.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A7HLA",
+    "region": "US",
+    "titulo": "Super Mario Party Jamboree",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Fiesta", "Minijuegos", "Tablero"],
+    "sinopsis": "La entrega más ambiciosa de la saga Mario Party. Con más de 110 minijuegos, siete tableros y modos en línea, ofrece la experiencia más completa para jugar con amigos y familiares. Incluye modos cooperativos y competitivos, y la posibilidad de jugar con hasta 20 jugadores en línea.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AAABA",
+    "region": "US",
+    "titulo": "Super Smash Bros. Ultimate",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Lucha", "Fiesta", "Multijugador"],
+    "sinopsis": "El crossover de lucha más grande de la historia. Con un roster de más de 80 personajes de diferentes franquicias, incluyendo todos los luchadores de entregas anteriores y nuevos invitados, ofrece una experiencia de combate accesible pero profunda, con una gran cantidad de modos y contenido para un jugador.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A26CA",
+    "region": "US",
+    "titulo": "Tails of Iron",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["RPG de acción", "Soulslike", "Plataformas"],
+    "sinopsis": "Un desafiante RPG de acción con un estilo artístico dibujado a mano. Controlas a Redgi, el heredero al trono de un reino de ratas, que debe recuperar su tierra de las ranas invasoras. Con un combate estilo soulslike, una historia narrada por Doug Cockle (Geralt de The Witcher) y una dificultad notable.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BGB2A",
+    "region": "US",
+    "titulo": "Tails of Iron 2: Whiskers of Winter",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2025",
+    "genero": ["RPG de acción", "Soulslike", "Plataformas"],
+    "sinopsis": "La secuela de Tails of Iron. En un mundo helado, controlas a Arlo, el hijo del jefe de una tribu de ratas, que debe vengar la destrucción de su aldea a manos de un ejército de murciélagos. Con un combate mejorado, nuevas armas y un mundo más grande, expande la fórmula del original.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BHCYE",
+    "region": "US",
+    "titulo": "Teenage Mutant Ninja Turtles: Splintered Fate",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Roguelike", "Acción", "Beat 'em up"],
+    "sinopsis": "Un roguelike de acción protagonizado por las Tortugas Ninja. Cuando Splinter es secuestrado, las cuatro tortugas deberán adentrarse en las alcantarillas y enfrentarse a hordas de enemigos en mazmorras generadas proceduralmente. Con cooperativo para cuatro jugadores y un combate ágil, es una aventura adictiva.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXNEA",
+    "region": "US",
+    "titulo": "The Last Campfire",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Aventura", "Puzles", "Narrativo"],
+    "sinopsis": "Una aventura de puzles y exploración con un tono melancólico y emotivo. Eres un pequeño ser perdido que busca un propósito en un mundo misterioso. Explora paisajes oníricos, resuelve puzles ambientales y ayuda a otros personajes a encontrar la paz en una experiencia breve pero inolvidable.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A9NZA",
+    "region": "US",
+    "titulo": "The Last Faith",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["Metroidvania", "Acción", "Soulslike"],
+    "sinopsis": "Un metroidvania con elementos de soulslike y una estética gótica y oscura. En un mundo decadente, controlas a Eric, un guerrero que debe descubrir la verdad sobre su maldición y enfrentarse a criaturas horribles. Con combate desafiante, exploración no lineal y múltiples finales.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AAAAA",
+    "region": "US",
+    "titulo": "The Legend of Zelda: Breath of the Wild",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Acción", "Aventura", "Mundo abierto"],
+    "sinopsis": "Una revolución para la saga Zelda. Link despierta tras 100 años de letargo para derrotar a Ganon y salvar Hyrule. Con un mundo abierto increíblemente interactivo, libertad total para explorar y resolver puzles, y un sistema de física innovador, es considerado uno de los mejores juegos de todos los tiempos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BDGEA",
+    "region": "US",
+    "titulo": "The Legend of Zelda: Echoes of Wisdom",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Aventura", "Puzles", "Plataformas"],
+    "sinopsis": "Por primera vez, la Princesa Zelda es la protagonista. Link ha sido secuestrado y Zelda debe usar el poder del Cetro de Tri para crear 'ecos', copias de objetos y enemigos, y resolver puzles en un mundo lleno de misterios. Con un estilo visual que recuerda a Link's Awakening, es una aventura fresca y encantadora.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AR3NA",
+    "region": "US",
+    "titulo": "The Legend of Zelda: Link's Awakening",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2019",
+    "genero": ["Aventura", "Puzles", "Plataformas"],
+    "sinopsis": "La remasterización del clásico de Game Boy. Link despierta en la isla de Koholint, donde deberá despertar al Pez del Viento para poder regresar a casa. Con un estilo visual de diorama, puzles ingeniosos y mazmorras memorables, es una de las entregas más queridas de la saga.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AXN7A",
+    "region": "US",
+    "titulo": "The Legend of Zelda: Tears of the Kingdom",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["Acción", "Aventura", "Mundo abierto"],
+    "sinopsis": "La secuela directa de Breath of the Wild. Link deberá explorar las islas flotantes en el cielo y las profundidades de Hyrule para detener una nueva amenaza. Con nuevas habilidades como la fusión de objetos y el viaje en el tiempo, expande la fórmula del original con una libertad aún mayor.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "BLFGA",
+    "region": "US",
+    "titulo": "Tomodachi Life: Una vida de ensueño",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2026",
+    "genero": ["Simulación de vida", "Simulación social"],
+    "sinopsis": "La nueva entrega de la querida saga Tomodachi Life. Crea a tus propios Mii y observa cómo interactúan, forman relaciones, se enamoran y viven situaciones absurdas en una isla llena de vida. Un simulador social lleno de humor y sorpresas, ideal para jugar sin prisas.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AWHWA",
+    "region": "US",
+    "titulo": "Tony Hawk's Pro Skater 1 + 2",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Deportes", "Skateboarding"],
+    "sinopsis": "La remasterización de los dos primeros Tony Hawk's Pro Skater, los juegos que definieron el género. Con gráficos modernizados, los niveles clásicos y la misma jugabilidad adictiva, puedes realizar trucos, combos y competir en solitario o con amigos. Un homenaje perfecto a la era dorada del skate.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A597A",
+    "region": "US",
+    "titulo": "Tunic",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Aventura", "Puzles", "Metroidvania"],
+    "sinopsis": "Una aventura de exploración y puzles con un estilo visual encantador y un misterio profundo. Eres un pequeño zorro que despierta en una isla llena de secretos, y deberás descubrir la verdad a través de la exploración y la deducción. Su manual del juego es una pieza clave de la experiencia.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A348A",
+    "region": "US",
+    "titulo": "UnMetal",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Acción", "Sigilo", "Parodia"],
+    "sinopsis": "Una parodia de los juegos de acción y sigilo de los 80 y 90, al estilo Metal Gear. Eres Jesse Fox, un hombre que ha sido capturado injustamente y debe escapar de una base militar secreta usando el ingenio, el sigilo y un sentido del humor absurdo. Una aventura divertida y llena de referencias.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "ASGGA",
+    "region": "US",
+    "titulo": "Unravel Two",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2018",
+    "genero": ["Plataformas", "Puzles", "Cooperativo"],
+    "sinopsis": "La secuela del emotivo juego de plataformas. Yarny regresa en una aventura cooperativa para dos jugadores, donde dos criaturas de hilo deben trabajar juntas para superar obstáculos y resolver puzles en un mundo inspirado en paisajes nórdicos. Una experiencia breve pero encantadora.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AU9CA",
+    "region": "US",
+    "titulo": "Vigil: The Longest Night",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Metroidvania", "Acción", "Plataformas"],
+    "sinopsis": "Un metroidvania de acción con una atmósfera gótica y un combate desafiante. Eres Leila, una vigía que debe proteger a su pueblo de una maldición ancestral. Con una historia ramificada, múltiples finales y un sistema de combate que recuerda a los clásicos del género, es una joya oculta.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AW7NA",
+    "region": "US",
+    "titulo": "WarioWare: Get It Together!",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Fiesta", "Minijuegos"],
+    "sinopsis": "La entrega de WarioWare para Switch. Con una colección de microjuegos de cinco segundos, el objetivo es completar la mayor cantidad posible en poco tiempo. En esta ocasión, controlas a diferentes personajes, cada uno con habilidades únicas, lo que añade una capa de estrategia a la fórmula clásica.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A5ETA",
+    "region": "US",
+    "titulo": "Watermelon Game",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2023",
+    "genero": ["Puzles", "Física"],
+    "sinopsis": "Un juego de puzles basado en la física, similar al clásico Suika Game. Deja caer frutas y combínalas para crear otras más grandes, evitando que se desborden del recipiente. Su sencillez y su adictiva jugabilidad lo han convertido en un fenómeno viral.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AVVUA",
+    "region": "US",
+    "titulo": "Windbound",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2020",
+    "genero": ["Supervivencia", "Aventura", "Exploración"],
+    "sinopsis": "Una aventura de supervivencia en una isla desierta. Eres Kara, una náufraga que debe sobrevivir, fabricar herramientas, cazar y explorar las islas que conforman un archipiélago misterioso. Con un estilo visual colorido y un enfoque en la exploración y la navegación, es una experiencia relajante pero desafiante.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AFVQA",
+    "region": "US",
+    "titulo": "Worms W.M.D",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2017",
+    "genero": ["Estrategia por turnos", "Artillería", "Fiesta"],
+    "sinopsis": "La entrega de Worms con un estilo visual dibujado a mano. Los gusanos vuelven a la carga en batallas por turnos con un arsenal de armas absurdas y vehículos. Con un modo campaña, multijugador local y en línea, es una experiencia divertida y estratégica para jugar con amigos.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AZ89A",
+    "region": "US",
+    "titulo": "The Legend of Zelda: Skyward Sword HD",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2021",
+    "genero": ["Acción", "Aventura", "Puzles"],
+    "sinopsis": "La remasterización en HD de Skyward Sword, el origen cronológico de la saga Zelda. Link debe descender de la isla flotante de Skyloft para rescatar a Zelda y descubrir la verdad sobre la Espada Maestra. Con controles adaptados a los Joy-Con, es una aventura clásica con un diseño de mazmorras excepcional.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "AABPH",
+    "region": "US",
+    "titulo": "Mario Kart 8 Deluxe (con Booster Course Pass)",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2022",
+    "genero": ["Carreras", "Fiesta"],
+    "sinopsis": "La versión de Mario Kart 8 Deluxe que incluye el Booster Course Pass, un pase de expansión que añade 48 circuitos adicionales, incluyendo remakes de clásicos de toda la saga y nuevos circuitos. La experiencia definitiva de Mario Kart en Switch, con una cantidad ingente de contenido.",
+    "estado": "Disponible"
+  },
+  {
+    "id": "A82CA",
+    "region": "US",
+    "titulo": "Nintendo World Championships: NES Edition",
+    "plataforma": "Nintendo Switch",
+    "lanzamiento": "2024",
+    "genero": ["Retro", "Minijuegos", "Competitivo"],
+    "sinopsis": "Una colección de desafíos extraídos de clásicos de NES, inspirada en el mítico campeonato de 1990. Compite por los mejores tiempos en más de 150 desafíos de juegos como Super Mario Bros., The Legend of Zelda o Metroid, con modos para un jugador y multijugador local y en línea.",
+    "estado": "Disponible"
+  }
+]
