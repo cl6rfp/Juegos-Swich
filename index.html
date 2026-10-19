@@ -4,355 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameFlix - Catálogo de Juegos</title>
-    
-    <!-- CSS integrado directamente para evitar fallos de carga -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🎮 GAMEFLIX</div>
+        <input type="text" id="buscador" placeholder="Buscar juego..." class="buscador">
+    </header>
 
-        body {
-            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%) !important;
-            background-attachment: fixed;
-            color: #ffffff !important;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
+    <section class="hero" id="hero">
+        <div class="hero-contenido">
+            <h1 id="hero-titulo">Cargando...</h1>
+            <p id="hero-sinopsis"></p>
+            <button class="btn-hero" onclick="scrollToCatalogo()">Ver catálogo</button>
+        </div>
+    </section>
 
-        /* Header glassmorphism */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 40px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    <section class="filtros" id="filtros">
+        <button class="filtro-btn activo" data-genero="todos">Todos</button>
+    </section>
 
-        .logo {
-            font-size: 26px;
-            font-weight: 900;
-            background: linear-gradient(90deg, #00f5d4, #f15bb5, #fee440);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: 1px;
-        }
+    <main>
+        <h2 class="seccion-titulo">Catálogo completo</h2>
+        <div class="catalogo" id="catalogo"></div>
+    </main>
 
-        .buscador {
-            padding: 10px 20px;
-            border-radius: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background: rgba(255, 255, 255, 0.08);
-            color: #fff;
-            width: 260px;
-            outline: none;
-            transition: all 0.3s;
-        }
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <div class="modal-imagen" id="modal-imagen"></div>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-info"></p>
+            <p id="modal-sinopsis"></p>
+        </div>
+    </div>
 
-        .buscador:focus {
-            border-color: #00f5d4;
-            box-shadow: 0 0 15px rgba(0, 245, 212, 0.4);
-        }
-
-        .buscador::placeholder {
-            color: #aaa;
-        }
-
-        /* Hero */
-        .hero {
-            height: 65vh;
-            display: flex;
-            align-items: flex-end;
-            padding: 60px 40px;
-            position: relative;
-            background: radial-gradient(circle at 30% 40%, rgba(241, 91, 181, 0.3), transparent 60%),
-                        radial-gradient(circle at 70% 60%, rgba(0, 245, 212, 0.25), transparent 60%),
-                        linear-gradient(135deg, #1a1a3e, #0f0c29);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(0deg, #0f0c29 0%, transparent 60%);
-        }
-
-        .hero-contenido {
-            position: relative;
-            z-index: 2;
-            max-width: 650px;
-        }
-
-        .hero h1 {
-            font-size: 52px;
-            margin-bottom: 15px;
-            background: linear-gradient(90deg, #00f5d4, #f15bb5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 900;
-        }
-
-        .hero p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 22px;
-            color: #ddd;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .btn-hero {
-            padding: 12px 32px;
-            background: linear-gradient(90deg, #f15bb5, #9b5de5);
-            color: #fff;
-            border: none;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 4px 20px rgba(241, 91, 181, 0.4);
-        }
-
-        .btn-hero:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(241, 91, 181, 0.6);
-        }
-
-        /* Filtros */
-        .filtros {
-            padding: 20px 40px;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: -30px;
-            position: relative;
-            z-index: 3;
-        }
-
-        .filtro-btn {
-            padding: 8px 20px;
-            background: rgba(255, 255, 255, 0.07);
-            color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 14px;
-            backdrop-filter: blur(8px);
-        }
-
-        .filtro-btn:hover {
-            border-color: #00f5d4;
-            color: #00f5d4;
-        }
-
-        .filtro-btn.activo {
-            background: linear-gradient(90deg, #00f5d4, #00bbf9);
-            color: #0f0c29;
-            border-color: transparent;
-            font-weight: bold;
-            box-shadow: 0 0 20px rgba(0, 245, 212, 0.5);
-        }
-
-        /* Catálogo */
-        .seccion-titulo {
-            padding: 20px 40px;
-            font-size: 26px;
-            font-weight: 800;
-            color: #fff;
-        }
-
-        .catalogo {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-            gap: 22px;
-            padding: 20px 40px 80px;
-        }
-
-        .tarjeta {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: all 0.35s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            position: relative;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .tarjeta:hover {
-            transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 20px 40px rgba(241, 91, 181, 0.3), 0 0 30px rgba(0, 245, 212, 0.2);
-        }
-
-        .tarjeta-imagen {
-            height: 300px;
-            background: linear-gradient(135deg, #2a2a5a, #1a1a3e);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .tarjeta-imagen img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            transition: transform 0.5s;
-            display: block;
-        }
-
-        .tarjeta:hover .tarjeta-imagen img {
-            transform: scale(1.1);
-        }
-
-        .tarjeta-info {
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .tarjeta-info h3 {
-            font-size: 16px;
-            margin-bottom: 8px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: #fff;
-        }
-
-        .tarjeta-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 12px;
-            color: #aaa;
-            margin-bottom: 10px;
-        }
-
-        .tarjeta-generos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-top: auto;
-        }
-
-        .genero-tag {
-            font-size: 10px;
-            padding: 3px 9px;
-            background: rgba(0, 245, 212, 0.15);
-            color: #00f5d4;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 245, 212, 0.3);
-        }
-
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(6px);
-            z-index: 200;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .modal.activo {
-            display: flex;
-        }
-
-        .modal-contenido {
-            background: linear-gradient(135deg, #1a1a3e, #24243e);
-            padding: 40px;
-            border-radius: 20px;
-            max-width: 600px;
-            width: 100%;
-            position: relative;
-            border: 1px solid rgba(0, 245, 212, 0.3);
-            box-shadow: 0 0 60px rgba(0, 245, 212, 0.2);
-            max-height: 90vh;
-            overflow-y: auto;
-        }
-
-        .modal-imagen {
-            width: 100%;
-            height: 280px;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-        }
-
-        .modal-imagen img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .cerrar {
-            position: absolute;
-            top: 15px;
-            right: 25px;
-            font-size: 32px;
-            cursor: pointer;
-            color: #aaa;
-            transition: color 0.3s;
-            z-index: 10;
-        }
-
-        .cerrar:hover {
-            color: #f15bb5;
-        }
-
-        .modal-contenido h2 {
-            background: linear-gradient(90deg, #00f5d4, #f15bb5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 15px;
-            font-size: 28px;
-        }
-
-        .modal-contenido p {
-            line-height: 1.7;
-            margin-bottom: 12px;
-            color: #ddd;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header { padding: 15px 20px; }
-            .logo { font-size: 20px; }
-            .buscador { width: 140px; }
-            .hero { padding: 40px 20px; height: 55vh; }
-            .hero h1 { font-size: 34px; }
-            .filtros, .seccion-titulo, .catalogo { padding-left: 20px; padding-right: 20px; }
-            .catalogo { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+    <script src="script.js"></script>
+</body>
+</html>to-fill, minmax(150px, 1fr)); gap: 14px; }
             .tarjeta-imagen { height: 220px; }
             .modal-contenido { padding: 25px; }
             .modal-imagen { height: 200px; }
