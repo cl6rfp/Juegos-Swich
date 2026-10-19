@@ -521,7 +521,7 @@
   },
   {
     "id": "AXEAA",
-    "region": "US",
+    "region": "JA",
     "titulo": "Hyrule Warriors: Age of Calamity",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2020",
