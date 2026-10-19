@@ -68,6 +68,8 @@ body {
     background: radial-gradient(circle at 30% 40%, rgba(241, 91, 181, 0.3), transparent 60%),
                 radial-gradient(circle at 70% 60%, rgba(0, 245, 212, 0.25), transparent 60%),
                 linear-gradient(135deg, #1a1a3e, #0f0c29);
+    background-size: cover;
+    background-position: center;
 }
 
 .hero::before {
@@ -221,7 +223,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: transform 0.5s;
+    display: block;
 }
 
 .tarjeta:hover .tarjeta-imagen img {
@@ -290,6 +294,23 @@ body {
     position: relative;
     border: 1px solid rgba(0, 245, 212, 0.3);
     box-shadow: 0 0 60px rgba(0, 245, 212, 0.2);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-imagen {
+    width: 100%;
+    height: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.modal-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cerrar {
@@ -300,6 +321,7 @@ body {
     cursor: pointer;
     color: #aaa;
     transition: color 0.3s;
+    z-index: 10;
 }
 
 .cerrar:hover {
@@ -331,4 +353,6 @@ body {
     .filtros, .seccion-titulo, .catalogo { padding-left: 20px; padding-right: 20px; }
     .catalogo { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
     .tarjeta-imagen { height: 200px; }
+    .modal-contenido { padding: 25px; }
+    .modal-imagen { height: 200px; }
 }
