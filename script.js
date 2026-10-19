@@ -1,4 +1,4 @@
-const URL_DATOS = 'https://raw.githubusercontent.com/cl6rfp/Juegos-Swich/refs/heads/main/lista.txt';
+const URL_DATOS = './lista.txt';
 let todosLosJuegos = [];
 
 // Cargar datos
@@ -6,10 +6,13 @@ async function cargarDatos() {
     try {
         const respuesta = await fetch(URL_DATOS);
         todosLosJuegos = await respuesta.json();
-        
+
         // Banner con un juego aleatorio
         mostrarHero(todosLosJuegos[Math.floor(Math.random() * todosLosJuegos.length)]);
-        
+
+        // Generar filtros dinámicamente desde los géneros del JSON
+        generarFiltros(todosLosJuegos);
+
         // Renderizar catálogo
         renderizarCatalogo(todosLosJuegos);
     } catch (error) {
@@ -22,8 +25,54 @@ async function cargarDatos() {
 function mostrarHero(juego) {
     document.getElementById('hero-titulo').textContent = juego.titulo;
     document.getElementById('hero-sinopsis').textContent = juego.sinopsis;
-    document.getElementById('hero').style.backgroundImage = 
-        `linear-gradient(135deg, #2a0a0a, #1a1a1a), radial-gradient(circle at 30% 50%, rgba(229,9,20,0.3), transparent)`;
+
+    // Imagen de fondo del hero
+    const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
+    const hero = document.getElementById('hero');
+    const img = new Image();
+    img.onload = () => {
+        hero.style.backgroundImage = `linear-gradient(0deg, #0f0c29 0%, rgba(15,12,41,0.5) 50%, transparent 100%), url('${urlImagen}')`;
+    };
+    img.src = urlImagen;
+}
+
+// Generar botones de filtro desde los géneros reales del JSON
+function generarFiltros(juegos) {
+    const contenedor = document.getElementById('filtros');
+    const generosSet = new Set();
+
+    juegos.forEach(j => {
+        (j.genero || []).forEach(g => generosSet.add(g));
+    });
+
+    // Ordenar alfabéticamente y limitar a los más comunes
+    const generos = Array.from(generosSet).sort();
+
+    generos.forEach(genero => {
+        const btn = document.createElement('button');
+        btn.className = 'filtro-btn';
+        btn.dataset.genero = genero;
+        btn.textContent = genero;
+        contenedor.appendChild(btn);
+    });
+
+    // Asignar evento a todos los botones (incluido "Todos")
+    document.querySelectorAll('.filtro-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('activo'));
+            btn.classList.add('activo');
+
+            const genero = btn.dataset.genero;
+            if (genero === 'todos') {
+                renderizarCatalogo(todosLosJuegos);
+            } else {
+                const filtrados = todosLosJuegos.filter(j =>
+                    (j.genero || []).some(g => g.toLowerCase() === genero.toLowerCase())
+                );
+                renderizarCatalogo(filtrados);
+            }
+        });
+    });
 }
 
 // Renderizar tarjetas
@@ -36,10 +85,14 @@ function renderizarCatalogo(juegos) {
         tarjeta.className = 'tarjeta';
         tarjeta.onclick = () => abrirModal(juego);
 
-        const emoji = obtenerEmoji(juego.genero);
+        // Construir URL de la portada con region e id
+        const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
 
         tarjeta.innerHTML = `
-            <div class="tarjeta-imagen">${emoji}</div>
+            <div class="tarjeta-imagen">
+                <img src="${urlImagen}" alt="${juego.titulo}" loading="lazy"
+                     onerror="this.style.display='none'; this.parentElement.innerHTML='🎮';">
+            </div>
             <div class="tarjeta-info">
                 <h3>${juego.titulo}</h3>
                 <div class="tarjeta-meta">
@@ -55,30 +108,19 @@ function renderizarCatalogo(juegos) {
     });
 }
 
-// Emoji según género
-function obtenerEmoji(generos) {
-    if (!generos) return '🎮';
-    const g = generos.join(' ').toLowerCase();
-    if (g.includes('terror')) return '👻';
-    if (g.includes('rpg')) return '⚔️';
-    if (g.includes('carreras')) return '🏎️';
-    if (g.includes('lucha')) return '🥊';
-    if (g.includes('plataformas')) return '🍄';
-    if (g.includes('metroidvania')) return '🗡️';
-    if (g.includes('ritmo')) return '🎵';
-    if (g.includes('deportes')) return '⚽';
-    if (g.includes('puzles')) return '🧩';
-    if (g.includes('aventura')) return '🗺️';
-    return '🎮';
-}
-
 // Modal
 function abrirModal(juego) {
+    const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
+
+    document.getElementById('modal-imagen').innerHTML =
+        `<img src="${urlImagen}" alt="${juego.titulo}" onerror="this.parentElement.innerHTML='🎮';">`;
+
     document.getElementById('modal-titulo').textContent = juego.titulo;
-    document.getElementById('modal-info').innerHTML = 
+    document.getElementById('modal-info').innerHTML =
         `<strong>Plataforma:</strong> ${juego.plataforma || 'N/A'}<br>
          <strong>Año:</strong> ${juego.lanzamiento || 'N/A'}<br>
          <strong>Géneros:</strong> ${(juego.genero || []).join(', ')}<br>
+         <strong>Región:</strong> ${juego.region || 'N/A'}<br>
          <strong>Estado:</strong> ${juego.estado || 'N/A'}`;
     document.getElementById('modal-sinopsis').textContent = juego.sinopsis;
     document.getElementById('modal').classList.add('activo');
@@ -95,29 +137,11 @@ function scrollToCatalogo() {
 // Buscador
 document.getElementById('buscador').addEventListener('input', (e) => {
     const texto = e.target.value.toLowerCase();
-    const filtrados = todosLosJuegos.filter(j => 
+    const filtrados = todosLosJuegos.filter(j =>
         j.titulo.toLowerCase().includes(texto) ||
         (j.sinopsis && j.sinopsis.toLowerCase().includes(texto))
     );
     renderizarCatalogo(filtrados);
-});
-
-// Filtros por género
-document.querySelectorAll('.filtro-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('activo'));
-        btn.classList.add('activo');
-        
-        const genero = btn.dataset.genero;
-        if (genero === 'todos') {
-            renderizarCatalogo(todosLosJuegos);
-        } else {
-            const filtrados = todosLosJuegos.filter(j => 
-                (j.genero || []).some(g => g.toLowerCase().includes(genero.toLowerCase()))
-            );
-            renderizarCatalogo(filtrados);
-        }
-    });
 });
 
 // Cerrar modal al clic fuera
