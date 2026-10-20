@@ -691,7 +691,7 @@
   },
   {
     "id": "ARQPA",
-    "region": "US",
+    "region": "JA",
     "titulo": "Mario and Sonic at the Olympic Games Tokyo 2020",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2019",
@@ -711,7 +711,7 @@
   },
   {
     "id": "AABPB",
-    "region": "US",
+    "region": "ZH",
     "titulo": "Mario Kart 8 Deluxe",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2017",
@@ -741,7 +741,7 @@
   },
   {
     "id": "A2G7B",
-    "region": "US",
+    "region": "KO",
     "titulo": "Mario + Rabbids Sparks of Hope",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2022",
@@ -861,7 +861,7 @@
   },
   {
     "id": "A532B",
-    "region": "US",
+    "region": "KO",
     "titulo": "NieR: Automata The End of YoRHa Edition",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2022",
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "A896B",
-    "region": "US",
+    "region": "JA",
     "titulo": "SIGNALIS",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2022",
@@ -1221,7 +1221,7 @@
   },
   {
     "id": "AXQ6B",
-    "region": "US",
+    "region": "JA",
     "titulo": "Sonic Colors Ultimate",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2021",
@@ -1261,7 +1261,7 @@
   },
   {
     "id": "ACPGB",
-    "region": "US",
+    "region": "JA",
     "titulo": "Stardew Valley",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2017",
@@ -1331,7 +1331,7 @@
   },
   {
     "id": "ADALB",
-    "region": "US",
+    "region": "ZH",
     "titulo": "Super Mario Bros. U Deluxe",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2019",
