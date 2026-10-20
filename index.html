@@ -451,13 +451,25 @@
             document.getElementById('hero-titulo').textContent = juego.titulo;
             document.getElementById('hero-sinopsis').textContent = juego.sinopsis;
 
-            const urlImagen = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
-            const hero = document.getElementById('hero');
-            const img = new Image();
-            img.onload = () => {
-                hero.style.backgroundImage = `linear-gradient(0deg, #0f0c29 0%, rgba(15,12,41,0.6) 50%, transparent 100%), url('${urlImagen}')`;
+            const urlWeb   = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
+            const urlLocal = `images/box/${juego.id}.png`;
+            const hero     = document.getElementById('hero');
+
+            const aplicarFondo = (url) => {
+                hero.style.backgroundImage = `linear-gradient(0deg, #0f0c29 0%, rgba(15,12,41,0.6) 50%, transparent 100%), url('${url}')`;
             };
-            img.src = urlImagen;
+
+            const img = new Image();
+            img.onload  = () => aplicarFondo(urlWeb);
+            img.onerror = () => {
+                const imgLocal = new Image();
+                imgLocal.onload  = () => aplicarFondo(urlLocal);
+                imgLocal.onerror = () => {
+                    hero.style.backgroundImage = `linear-gradient(135deg, #1a1a3e, #0f0c29)`;
+                };
+                imgLocal.src = urlLocal;
+            };
+            img.src = urlWeb;
         }
 
         function generarFiltros(juegos) {
@@ -499,12 +511,22 @@
                 tarjeta.className = 'tarjeta';
                 tarjeta.onclick = () => abrirModal(juego);
 
-                const urlImagen = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
+                const urlWeb   = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
+                const urlLocal = `images/box/${juego.id}.png`;
 
                 tarjeta.innerHTML = `
                     <div class="tarjeta-imagen">
-                        <img src="${urlImagen}" alt="${juego.titulo}" loading="lazy"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='🎮';">
+                        <img src="${urlWeb}" alt="${juego.titulo}" loading="lazy"
+                             data-src-local="${urlLocal}"
+                             onerror="
+                                if(!this.dataset.intentoLocal){
+                                    this.dataset.intentoLocal='1';
+                                    this.src=this.dataset.srcLocal;
+                                } else {
+                                    this.style.display='none';
+                                    this.parentElement.innerHTML='🎮';
+                                }
+                             ">
                     </div>
                     <div class="tarjeta-info">
                         <h3>${juego.titulo}</h3>
@@ -522,14 +544,26 @@
         }
 
         function abrirModal(juego) {
-            let urlImagen = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
-            
-            if (juego.fanart) {
-                urlImagen = juego.fanart;
-            }
+            const modalImg = document.getElementById('modal-imagen');
+            const urlWeb   = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
+            const urlLocal = `images/box/${juego.id}.png`;
 
-            document.getElementById('modal-imagen').innerHTML =
-                `<img src="${urlImagen}" alt="${juego.titulo}" onerror="this.parentElement.innerHTML='🎮';">`;
+            modalImg.innerHTML = '';
+
+            const img = document.createElement('img');
+            img.alt = juego.titulo;
+
+            img.onerror = () => {
+                if (!img.dataset.intentoLocal) {
+                    img.dataset.intentoLocal = '1';
+                    img.src = urlLocal;
+                } else {
+                    modalImg.innerHTML = '🎮';
+                }
+            };
+
+            img.src = urlWeb;
+            modalImg.appendChild(img);
 
             document.getElementById('modal-titulo').textContent = juego.titulo;
             document.getElementById('modal-info').innerHTML =
