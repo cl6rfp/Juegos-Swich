@@ -371,7 +371,7 @@
   },
   {
     "id": "AH97D",
-    "region": "US",
+    "region": "ZH",
     "titulo": "DRAGON QUEST BUILDERS 2",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2019",
