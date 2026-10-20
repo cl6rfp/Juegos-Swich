@@ -531,7 +531,7 @@
   },
   {
     "id": "AU84B",
-    "region": "US",
+    "region": "JA",
     "titulo": "Immortals Fenyx Rising",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2020",
