@@ -45,6 +45,12 @@
             letter-spacing: 1px;
         }
 
+        .header-derecha {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
         .buscador {
             padding: 10px 20px;
             border-radius: 25px;
@@ -63,6 +69,27 @@
 
         .buscador::placeholder {
             color: #aaa;
+        }
+
+        /* Botón de la lista en el header */
+        .btn-lista-header {
+            background: rgba(0, 245, 212, 0.15);
+            border: 1px solid rgba(0, 245, 212, 0.4);
+            color: #00f5d4;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-lista-header:hover {
+            background: rgba(0, 245, 212, 0.3);
+            box-shadow: 0 0 15px rgba(0, 245, 212, 0.4);
         }
 
         .hero {
@@ -291,6 +318,41 @@
             backdrop-filter: blur(4px);
         }
 
+        /* Botón + en la tarjeta */
+        .btn-add-tarjeta {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: rgba(15, 12, 41, 0.8);
+            border: 1px solid rgba(0, 245, 212, 0.5);
+            color: #00f5d4;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            backdrop-filter: blur(4px);
+        }
+
+        .btn-add-tarjeta:hover {
+            background: #00f5d4;
+            color: #0f0c29;
+            transform: scale(1.1);
+        }
+
+        .btn-add-tarjeta.agregado {
+            background: #f15bb5;
+            color: #fff;
+            border-color: #f15bb5;
+        }
+
+        /* Modal de juego */
         .modal {
             display: none;
             position: fixed;
@@ -318,8 +380,6 @@
             box-shadow: 0 0 60px rgba(0, 245, 212, 0.2);
             max-height: 90vh;
             overflow-y: auto;
-            
-            /* NUEVO: Para evitar el parpadeo */
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
@@ -374,10 +434,197 @@
             color: #ddd;
         }
 
+        .btn-add-modal {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #00f5d4, #00b4d8);
+            color: #0f0c29;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 245, 212, 0.4);
+        }
+
+        .btn-add-modal:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 245, 212, 0.6);
+        }
+
+        .btn-add-modal.agregado {
+            background: linear-gradient(90deg, #f15bb5, #9b5de5);
+            color: #fff;
+        }
+
+        /* Panel lateral de la lista */
+        .panel-lista {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            background: linear-gradient(135deg, #1a1a3e, #0f0c29);
+            z-index: 300;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+            transition: right 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid rgba(0, 245, 212, 0.3);
+        }
+
+        .panel-lista.activo {
+            right: 0;
+        }
+
+        .panel-header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-header h3 {
+            font-size: 20px;
+            color: #00f5d4;
+        }
+
+        .btn-cerrar-panel {
+            background: none;
+            border: none;
+            color: #aaa;
+            font-size: 28px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .btn-cerrar-panel:hover {
+            color: #f15bb5;
+        }
+
+        .panel-body {
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .lista-vacia {
+            color: #aaa;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 15px;
+        }
+
+        .item-lista {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .btn-quitar-item {
+            background: rgba(241, 91, 181, 0.2);
+            border: none;
+            color: #f15bb5;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn-quitar-item:hover {
+            background: #f15bb5;
+            color: #fff;
+        }
+
+        .panel-footer {
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-compartir {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #00f5d4, #f15bb5);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .btn-compartir:hover {
+            box-shadow: 0 0 20px rgba(0, 245, 212, 0.5);
+        }
+
+        .apps-compartir {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .app-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            padding: 10px;
+        }
+
+        .app-btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .app-btn:hover {
+            transform: translateY(-3px) scale(1.1);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .app-btn.whatsapp:hover { box-shadow: 0 0 15px #25D366; }
+        .app-btn.telegram:hover { box-shadow: 0 0 15px #0088cc; }
+        .app-btn.messenger:hover { box-shadow: 0 0 15px #0084FF; }
+
+        /* Fondo oscuro para el panel */
+        .panel-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 250;
+        }
+
+        .panel-overlay.activo {
+            display: block;
+        }
+
         @media (max-width: 768px) {
             .header { padding: 15px 20px; }
             .logo { font-size: 20px; }
-            .buscador { width: 140px; }
+            .buscador { width: 120px; font-size: 14px; }
+            .btn-lista-header { padding: 8px 12px; font-size: 14px; }
             .hero { padding: 40px 20px; height: 55vh; }
             .hero h1 { font-size: 34px; }
             .filtros, .seccion-titulo, .catalogo { padding-left: 20px; padding-right: 20px; }
@@ -387,13 +634,19 @@
             .modal-contenido { padding: 25px; }
             .modal-imagen { height: 250px; }
             .contador-juegos { font-size: 13px; padding: 8px 15px; }
+            .panel-lista { width: 85%; max-width: 320px; }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="logo">🎮 GAMEFLIX</div>
-        <input type="text" id="buscador" placeholder="Buscar juego..." class="buscador">
+        <div class="header-derecha">
+            <input type="text" id="buscador" placeholder="Buscar juego..." class="buscador">
+            <button class="btn-lista-header" onclick="abrirPanelLista()">
+                📋 Mi Lista (<span id="contador-lista">0</span>)
+            </button>
+        </div>
     </header>
 
     <section class="hero" id="hero">
@@ -405,7 +658,6 @@
                 <button class="btn-hero" onclick="scrollToCatalogo()">Ver catálogo</button>
                 <div class="contador-juegos" id="contador-juegos">0 Juegos</div>
             </div>
-
         </div>
     </section>
 
@@ -420,6 +672,7 @@
         <div class="catalogo" id="catalogo"></div>
     </main>
 
+    <!-- Modal de juego -->
     <div class="modal" id="modal">
         <div class="modal-contenido">
             <span class="cerrar" onclick="cerrarModal()">&times;</span>
@@ -427,12 +680,42 @@
             <h2 id="modal-titulo"></h2>
             <p id="modal-info"></p>
             <p id="modal-sinopsis"></p>
+            <button class="btn-add-modal" id="btn-add-modal" onclick="toggleListaDesdeModal()">➕ Añadir a mi lista</button>
+        </div>
+    </div>
+
+    <!-- Panel lateral de la lista -->
+    <div class="panel-overlay" id="panel-overlay" onclick="cerrarPanelLista()"></div>
+    <div class="panel-lista" id="panel-lista">
+        <div class="panel-header">
+            <h3>Mi Lista de Juegos</h3>
+            <button class="btn-cerrar-panel" onclick="cerrarPanelLista()">&times;</button>
+        </div>
+        <div class="panel-body" id="panel-body">
+            <div class="lista-vacia" id="lista-vacia">Tu lista está vacía. ¡Añade juegos desde el catálogo!</div>
+            <div id="contenedor-items-lista"></div>
+        </div>
+        <div class="panel-footer">
+            <button class="btn-compartir" onclick="compartirLista()">Compartir lista</button>
+            <div class="apps-compartir">
+                <div class="app-btn whatsapp" title="Compartir por WhatsApp" onclick="compartirWhatsApp()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                </div>
+                <div class="app-btn telegram" title="Compartir por Telegram" onclick="compartirTelegram()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                </div>
+                <div class="app-btn messenger" title="Compartir por Messenger" onclick="compartirMessenger()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="Messenger">
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
         const URL_DATOS = './lista.txt';
         let todosLosJuegos = [];
+        let juegoActualModal = null;
+        let listaJuegos = JSON.parse(localStorage.getItem('gameflix_lista')) || [];
 
         async function cargarDatos() {
             try {
@@ -442,7 +725,9 @@
                 mostrarHero(todosLosJuegos[Math.floor(Math.random() * todosLosJuegos.length)]);
                 generarFiltros(todosLosJuegos);
                 renderizarCatalogo(todosLosJuegos);
-                
+                actualizarContadorLista();
+                actualizarListaUI();
+
                 document.getElementById('contador-juegos').textContent = `${todosLosJuegos.length} Juegos`;
 
             } catch (error) {
@@ -450,6 +735,159 @@
                 document.getElementById('catalogo').innerHTML = '<p style="padding: 20px;">Error al cargar el catálogo. Revisa que lista.txt sea un JSON válido y no esté cortado.</p>';
             }
         }
+
+        /* --- LÓGICA DE LA LISTA --- */
+        
+        function guardarLista() {
+            localStorage.setItem('gameflix_lista', JSON.stringify(listaJuegos));
+            actualizarContadorLista();
+            actualizarListaUI();
+        }
+
+        function actualizarContadorLista() {
+            document.getElementById('contador-lista').textContent = listaJuegos.length;
+        }
+
+        function toggleLista(juego) {
+            const index = listaJuegos.findIndex(j => j.id === juego.id);
+            if (index > -1) {
+                listaJuegos.splice(index, 1);
+            } else {
+                listaJuegos.push(juego);
+            }
+            guardarLista();
+        }
+
+        function toggleListaDesdeModal() {
+            if (juegoActualModal) {
+                toggleLista(juegoActualModal);
+                actualizarBotonModal();
+                // Cambiamos el icono de la tarjeta si está visible
+                const tarjetaBtn = document.querySelector(`.tarjeta[data-id="${juegoActualModal.id}"] .btn-add-tarjeta`);
+                if (tarjetaBtn) {
+                    const enLista = listaJuegos.some(j => j.id === juegoActualModal.id);
+                    tarjetaBtn.classList.toggle('agregado', enLista);
+                    tarjetaBtn.innerHTML = enLista ? '✓' : '+';
+                }
+            }
+        }
+
+        function actualizarBotonModal() {
+            if (!juegoActualModal) return;
+            const btn = document.getElementById('btn-add-modal');
+            const enLista = listaJuegos.some(j => j.id === juegoActualModal.id);
+            if (enLista) {
+                btn.textContent = '✓ En mi lista (Quitar)';
+                btn.classList.add('agregado');
+            } else {
+                btn.textContent = '➕ Añadir a mi lista';
+                btn.classList.remove('agregado');
+            }
+        }
+
+        function actualizarListaUI() {
+            const contenedor = document.getElementById('contenedor-items-lista');
+            const vacia = document.getElementById('lista-vacia');
+            
+            if (listaJuegos.length === 0) {
+                vacia.style.display = 'block';
+                contenedor.innerHTML = '';
+                return;
+            }
+            
+            vacia.style.display = 'none';
+            contenedor.innerHTML = listaJuegos.map((juego, index) => `
+                <div class="item-lista">
+                    <span>${index + 1}. ${juego.titulo}</span>
+                    <button class="btn-quitar-item" onclick="toggleListaPorId('${juego.id}')">&times;</button>
+                </div>
+            `).join('');
+        }
+
+        function toggleListaPorId(id) {
+            const juego = listaJuegos.find(j => j.id === id);
+            if (juego) {
+                toggleLista(juego);
+            }
+            // Si el modal está abierto y es este juego, actualizamos el botón
+            if (juegoActualModal && juegoActualModal.id === id) {
+                actualizarBotonModal();
+            }
+            // Actualizamos tarjetas
+            const tarjetaBtn = document.querySelector(`.tarjeta[data-id="${id}"] .btn-add-tarjeta`);
+            if (tarjetaBtn) {
+                const enLista = listaJuegos.some(j => j.id === id);
+                tarjetaBtn.classList.toggle('agregado', enLista);
+                tarjetaBtn.innerHTML = enLista ? '✓' : '+';
+            }
+        }
+
+        function abrirPanelLista() {
+            document.getElementById('panel-lista').classList.add('activo');
+            document.getElementById('panel-overlay').classList.add('activo');
+        }
+
+        function cerrarPanelLista() {
+            document.getElementById('panel-lista').classList.remove('activo');
+            document.getElementById('panel-overlay').classList.remove('activo');
+        }
+
+        /* --- COMPARTIR --- */
+
+        function generarTextoCompartir() {
+            if (listaJuegos.length === 0) return '';
+            
+            let texto = "Te comparto este listado de juegos que me interesan de tu catálogo:\n\n";
+            listaJuegos.forEach((juego, index) => {
+                texto += `${index + 1}. ${juego.titulo}\n`;
+            });
+            texto += "\nGracias, espero su respuesta.";
+            return texto;
+        }
+
+        function compartirLista() {
+            const texto = generarTextoCompartir();
+            if (!texto) {
+                alert('Tu lista está vacía. Añade algunos juegos primero.');
+                return;
+            }
+            // Por defecto, abrimos WhatsApp. El usuario puede elegir en el panel.
+            compartirWhatsApp();
+        }
+
+        function compartirWhatsApp() {
+            const texto = generarTextoCompartir();
+            if (!texto) return alert('La lista está vacía.');
+            const url = `https://wa.me/?text=${encodeURIComponent(texto)}`;
+            window.open(url, '_blank');
+        }
+
+        function compartirTelegram() {
+            const texto = generarTextoCompartir();
+            if (!texto) return alert('La lista está vacía.');
+            const url = `https://t.me/share/url?url=${encodeURIComponent(' ') }&text=${encodeURIComponent(texto)}`;
+            window.open(url, '_blank');
+        }
+
+        function compartirMessenger() {
+            const texto = generarTextoCompartir();
+            if (!texto) return alert('La lista está vacía.');
+            // Messenger a veces falla con textos largos. Intentamos el enlace estándar.
+            // Como fallback, si falla, copiamos al portapapeles.
+            const url = `fb-messenger://share/?link=${encodeURIComponent('https://tu-web.com')}&app_id=123456789&redirect_uri=${encodeURIComponent('https://tu-web.com')}`;
+            
+            // En web, es mejor usar el diálogo de Facebook para enviar.
+            const urlWeb = `https://www.facebook.com/dialog/send?app_id=123456789&link=${encodeURIComponent('https://tu-web.com')}&redirect_uri=${encodeURIComponent('https://tu-web.com')}`;
+            
+            // Dado que sin App ID real no funciona bien, usamos el portapapeles como plan B.
+            navigator.clipboard.writeText(texto).then(() => {
+                alert('Messenger a veces no permite enviar textos largos. ¡Pero no te preocupes! El mensaje se ha copiado al portapapeles. Abre Messenger y pégalo en el chat.');
+            }).catch(() => {
+                window.open(urlWeb, '_blank');
+            });
+        }
+
+        /* --- RESTO DE LÓGICA EXISTENTE --- */
 
         function mostrarHero(juego) {
             document.getElementById('hero-titulo').textContent = juego.titulo;
@@ -530,7 +968,16 @@
             juegos.forEach(juego => {
                 const tarjeta = document.createElement('div');
                 tarjeta.className = 'tarjeta';
-                tarjeta.onclick = () => abrirModal(juego);
+                tarjeta.dataset.id = juego.id;
+                tarjeta.onclick = (e) => {
+                    // Evitar que se abra el modal si se hace clic en el botón +
+                    if (e.target.closest('.btn-add-tarjeta')) return;
+                    abrirModal(juego);
+                };
+
+                const enLista = listaJuegos.some(j => j.id === juego.id);
+                const iconoBoton = enLista ? '✓' : '+';
+                const claseAgregado = enLista ? 'agregado' : '';
 
                 const urlsBoxLocal = [
                     `images/box/${juego.id}.jpg`,
@@ -540,6 +987,7 @@
                 const urlWeb = `https://art.gametdb.com/switch/box/${juego.region}/${juego.id}.png`;
 
                 tarjeta.innerHTML = `
+                    <button class="btn-add-tarjeta ${claseAgregado}" onclick="toggleListaDesdeTarjeta(event, '${juego.id}')">${iconoBoton}</button>
                     <div class="tarjeta-imagen">
                         <img src="${urlsBoxLocal[0]}" alt="${juego.titulo}" loading="lazy"
                              data-index="0"
@@ -575,7 +1023,21 @@
             });
         }
 
+        function toggleListaDesdeTarjeta(event, id) {
+            event.stopPropagation(); // Evitar que se abra el modal
+            const juego = todosLosJuegos.find(j => j.id === id);
+            if (juego) {
+                toggleLista(juego);
+                // Actualizamos visualmente el botón
+                const btn = event.target.closest('.btn-add-tarjeta');
+                const enLista = listaJuegos.some(j => j.id === id);
+                btn.classList.toggle('agregado', enLista);
+                btn.innerHTML = enLista ? '✓' : '+';
+            }
+        }
+
         function abrirModal(juego) {
+            juegoActualModal = juego;
             const modalImg = document.getElementById('modal-imagen');
             const modalContenido = document.querySelector('.modal-contenido');
             
@@ -600,6 +1062,7 @@
             const mostrarContenido = () => {
                 setTimeout(() => {
                     modalContenido.style.opacity = '1';
+                    actualizarBotonModal();
                 }, 50);
             };
 
@@ -640,6 +1103,7 @@
 
         function cerrarModal() {
             document.getElementById('modal').classList.remove('activo');
+            juegoActualModal = null;
         }
 
         function scrollToCatalogo() {
