@@ -318,6 +318,10 @@
             box-shadow: 0 0 60px rgba(0, 245, 212, 0.2);
             max-height: 90vh;
             overflow-y: auto;
+            
+            /* NUEVO: Para evitar el parpadeo */
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
         }
 
         .modal-imagen {
@@ -459,7 +463,6 @@
                 hero.style.backgroundImage = `linear-gradient(135deg, #1a1a3e, #0f0c29)`;
             };
 
-            // Prioridad: 1. Fanart GitHub (.jpg, .png, .avif), 2. GameTDB, 3. Carátula GitHub, 4. Gradiente
             const urlsFanartLocal = [
                 `images/fanart/${juego.id}.jpg`,
                 `images/fanart/${juego.id}.png`,
@@ -476,11 +479,9 @@
                     img.onerror = () => { index++; intentar(); };
                     img.src = urlsFanartLocal[index];
                 } else {
-                    // Si fallan todos los formatos locales, probar web
                     const imgWeb = new Image();
                     imgWeb.onload = () => aplicarFondo(urlWeb);
                     imgWeb.onerror = () => {
-                        // Si falla web, probar carátula local
                         const imgBox = new Image();
                         imgBox.onload = () => aplicarFondo(urlBoxLocal);
                         imgBox.onerror = fondoPorDefecto;
@@ -531,7 +532,6 @@
                 tarjeta.className = 'tarjeta';
                 tarjeta.onclick = () => abrirModal(juego);
 
-                // Prioridad: 1. Carátula GitHub (.jpg, .png, .avif), 2. GameTDB
                 const urlsBoxLocal = [
                     `images/box/${juego.id}.jpg`,
                     `images/box/${juego.id}.png`,
@@ -577,8 +577,11 @@
 
         function abrirModal(juego) {
             const modalImg = document.getElementById('modal-imagen');
+            const modalContenido = document.querySelector('.modal-contenido');
             
-            // Prioridad: 1. Fanart GitHub (.jpg, .png, .avif), 2. GameTDB, 3. Carátula GitHub, 4. Emoji
+            modalContenido.style.opacity = '0';
+            document.getElementById('modal').classList.add('activo');
+
             const urlsFanartLocal = [
                 `images/fanart/${juego.id}.jpg`,
                 `images/fanart/${juego.id}.png`,
@@ -594,6 +597,16 @@
 
             let intentoLocalIndex = 0;
 
+            const mostrarContenido = () => {
+                setTimeout(() => {
+                    modalContenido.style.opacity = '1';
+                }, 50);
+            };
+
+            img.onload = () => {
+                mostrarContenido();
+            };
+
             img.onerror = () => {
                 if (intentoLocalIndex < urlsFanartLocal.length) {
                     img.src = urlsFanartLocal[intentoLocalIndex];
@@ -606,6 +619,7 @@
                     img.src = urlBoxLocal;
                 } else {
                     modalImg.innerHTML = '🎮';
+                    mostrarContenido();
                 }
             };
 
@@ -622,7 +636,6 @@
                  <strong>Región:</strong> ${juego.region || 'N/A'}<br>
                  <strong>Estado:</strong> ${juego.estado || 'N/A'}`;
             document.getElementById('modal-sinopsis').textContent = juego.sinopsis;
-            document.getElementById('modal').classList.add('activo');
         }
 
         function cerrarModal() {
