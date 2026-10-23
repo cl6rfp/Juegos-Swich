@@ -451,25 +451,32 @@
             document.getElementById('hero-titulo').textContent = juego.titulo;
             document.getElementById('hero-sinopsis').textContent = juego.sinopsis;
 
-            const urlWeb   = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
-            const urlLocal = `images/box/${juego.id}.png`;
-            const hero     = document.getElementById('hero');
+            const urlFanart = juego.fanart || null;
+            const urlWeb    = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
+            const urlLocal  = `images/box/${juego.id}.png`;
+            const hero      = document.getElementById('hero');
 
             const aplicarFondo = (url) => {
                 hero.style.backgroundImage = `linear-gradient(0deg, #0f0c29 0%, rgba(15,12,41,0.6) 50%, transparent 100%), url('${url}')`;
             };
 
-            const img = new Image();
-            img.onload  = () => aplicarFondo(urlWeb);
-            img.onerror = () => {
-                const imgLocal = new Image();
-                imgLocal.onload  = () => aplicarFondo(urlLocal);
-                imgLocal.onerror = () => {
-                    hero.style.backgroundImage = `linear-gradient(135deg, #1a1a3e, #0f0c29)`;
-                };
-                imgLocal.src = urlLocal;
+            const fondoPorDefecto = () => {
+                hero.style.backgroundImage = `linear-gradient(135deg, #1a1a3e, #0f0c29)`;
             };
-            img.src = urlWeb;
+
+            const intentarCargar = (url, siguiente) => {
+                if (!url) { siguiente(); return; }
+                const img = new Image();
+                img.onload  = () => aplicarFondo(url);
+                img.onerror = () => siguiente();
+                img.src = url;
+            };
+
+            intentarCargar(urlFanart, () => {
+                intentarCargar(urlWeb, () => {
+                    intentarCargar(urlLocal, fondoPorDefecto);
+                });
+            });
         }
 
         function generarFiltros(juegos) {
@@ -545,8 +552,10 @@
 
         function abrirModal(juego) {
             const modalImg = document.getElementById('modal-imagen');
-            const urlWeb   = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
-            const urlLocal = `images/box/${juego.id}.png`;
+
+            const urlFanart = juego.fanart || null;
+            const urlWeb    = `https://art.gametdb.com/switch/coverfullHQ/${juego.region}/${juego.id}.jpg`;
+            const urlLocal  = `images/box/${juego.id}.png`;
 
             modalImg.innerHTML = '';
 
@@ -554,15 +563,22 @@
             img.alt = juego.titulo;
 
             img.onerror = () => {
-                if (!img.dataset.intentoLocal) {
-                    img.dataset.intentoLocal = '1';
+                const paso = img.dataset.paso || '0';
+
+                if (paso === '0' && urlFanart) {
+                    img.dataset.paso = '1';
+                    img.src = urlWeb;
+                } else if (paso === '0' || paso === '1') {
+                    img.dataset.paso = '2';
                     img.src = urlLocal;
                 } else {
                     modalImg.innerHTML = '🎮';
                 }
             };
 
-            img.src = urlWeb;
+            img.dataset.paso = '0';
+            img.src = urlFanart || urlWeb;
+
             modalImg.appendChild(img);
 
             document.getElementById('modal-titulo').textContent = juego.titulo;
