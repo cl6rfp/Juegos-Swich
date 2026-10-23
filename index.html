@@ -71,24 +71,25 @@
             color: #aaa;
         }
 
-        /* Botón de la lista en el header */
+        /* Botón de la lista en el header (Solo icono y número) */
         .btn-lista-header {
-            background: rgba(0, 245, 212, 0.15);
-            border: 1px solid rgba(0, 245, 212, 0.4);
-            color: #00f5d4;
-            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 10px 16px;
             border-radius: 25px;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 5px;
         }
 
         .btn-lista-header:hover {
-            background: rgba(0, 245, 212, 0.3);
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #00f5d4;
             box-shadow: 0 0 15px rgba(0, 245, 212, 0.4);
         }
 
@@ -318,18 +319,18 @@
             backdrop-filter: blur(4px);
         }
 
-        /* Botón + en la tarjeta */
+        /* Botón + en la tarjeta (Centrado y sin verde) */
         .btn-add-tarjeta {
             position: absolute;
             top: 10px;
             right: 10px;
             z-index: 10;
-            width: 35px;
-            height: 35px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
             background: rgba(15, 12, 41, 0.8);
-            border: 1px solid rgba(0, 245, 212, 0.5);
-            color: #00f5d4;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
             font-size: 20px;
             font-weight: bold;
             cursor: pointer;
@@ -338,11 +339,13 @@
             justify-content: center;
             transition: all 0.3s;
             backdrop-filter: blur(4px);
+            padding: 0; /* Asegura el centrado */
+            line-height: 1; /* Asegura el centrado */
         }
 
         .btn-add-tarjeta:hover {
-            background: #00f5d4;
-            color: #0f0c29;
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #fff;
             transform: scale(1.1);
         }
 
@@ -438,25 +441,25 @@
             display: inline-block;
             margin-top: 15px;
             padding: 12px 25px;
-            background: linear-gradient(90deg, #00f5d4, #00b4d8);
-            color: #0f0c29;
-            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 25px;
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 245, 212, 0.4);
         }
 
         .btn-add-modal:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 245, 212, 0.6);
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .btn-add-modal.agregado {
             background: linear-gradient(90deg, #f15bb5, #9b5de5);
             color: #fff;
+            border: none;
+            box-shadow: 0 4px 15px rgba(241, 91, 181, 0.4);
         }
 
         /* Panel lateral de la lista */
@@ -532,21 +535,29 @@
             color: #fff;
         }
 
+        /* Botón X de eliminar en la lista (Centrado y rojo) */
         .btn-quitar-item {
-            background: rgba(241, 91, 181, 0.2);
-            border: none;
+            background: rgba(241, 91, 181, 0.15);
+            border: 1px solid rgba(241, 91, 181, 0.3);
             color: #f15bb5;
             width: 28px;
             height: 28px;
             border-radius: 50%;
             cursor: pointer;
             font-weight: bold;
+            font-size: 16px;
             transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            line-height: 1;
         }
 
         .btn-quitar-item:hover {
             background: #f15bb5;
             color: #fff;
+            border-color: #f15bb5;
         }
 
         .panel-footer {
@@ -624,7 +635,7 @@
             .header { padding: 15px 20px; }
             .logo { font-size: 20px; }
             .buscador { width: 120px; font-size: 14px; }
-            .btn-lista-header { padding: 8px 12px; font-size: 14px; }
+            .btn-lista-header { padding: 8px 12px; font-size: 15px; }
             .hero { padding: 40px 20px; height: 55vh; }
             .hero h1 { font-size: 34px; }
             .filtros, .seccion-titulo, .catalogo { padding-left: 20px; padding-right: 20px; }
@@ -644,7 +655,7 @@
         <div class="header-derecha">
             <input type="text" id="buscador" placeholder="Buscar juego..." class="buscador">
             <button class="btn-lista-header" onclick="abrirPanelLista()">
-                📋 Mi Lista (<span id="contador-lista">0</span>)
+                📋 (<span id="contador-lista">0</span>)
             </button>
         </div>
     </header>
@@ -762,7 +773,6 @@
             if (juegoActualModal) {
                 toggleLista(juegoActualModal);
                 actualizarBotonModal();
-                // Cambiamos el icono de la tarjeta si está visible
                 const tarjetaBtn = document.querySelector(`.tarjeta[data-id="${juegoActualModal.id}"] .btn-add-tarjeta`);
                 if (tarjetaBtn) {
                     const enLista = listaJuegos.some(j => j.id === juegoActualModal.id);
@@ -809,11 +819,9 @@
             if (juego) {
                 toggleLista(juego);
             }
-            // Si el modal está abierto y es este juego, actualizamos el botón
             if (juegoActualModal && juegoActualModal.id === id) {
                 actualizarBotonModal();
             }
-            // Actualizamos tarjetas
             const tarjetaBtn = document.querySelector(`.tarjeta[data-id="${id}"] .btn-add-tarjeta`);
             if (tarjetaBtn) {
                 const enLista = listaJuegos.some(j => j.id === id);
@@ -851,7 +859,6 @@
                 alert('Tu lista está vacía. Añade algunos juegos primero.');
                 return;
             }
-            // Por defecto, abrimos WhatsApp. El usuario puede elegir en el panel.
             compartirWhatsApp();
         }
 
@@ -872,14 +879,7 @@
         function compartirMessenger() {
             const texto = generarTextoCompartir();
             if (!texto) return alert('La lista está vacía.');
-            // Messenger a veces falla con textos largos. Intentamos el enlace estándar.
-            // Como fallback, si falla, copiamos al portapapeles.
-            const url = `fb-messenger://share/?link=${encodeURIComponent('https://tu-web.com')}&app_id=123456789&redirect_uri=${encodeURIComponent('https://tu-web.com')}`;
-            
-            // En web, es mejor usar el diálogo de Facebook para enviar.
             const urlWeb = `https://www.facebook.com/dialog/send?app_id=123456789&link=${encodeURIComponent('https://tu-web.com')}&redirect_uri=${encodeURIComponent('https://tu-web.com')}`;
-            
-            // Dado que sin App ID real no funciona bien, usamos el portapapeles como plan B.
             navigator.clipboard.writeText(texto).then(() => {
                 alert('Messenger a veces no permite enviar textos largos. ¡Pero no te preocupes! El mensaje se ha copiado al portapapeles. Abre Messenger y pégalo en el chat.');
             }).catch(() => {
@@ -970,7 +970,6 @@
                 tarjeta.className = 'tarjeta';
                 tarjeta.dataset.id = juego.id;
                 tarjeta.onclick = (e) => {
-                    // Evitar que se abra el modal si se hace clic en el botón +
                     if (e.target.closest('.btn-add-tarjeta')) return;
                     abrirModal(juego);
                 };
@@ -1024,11 +1023,10 @@
         }
 
         function toggleListaDesdeTarjeta(event, id) {
-            event.stopPropagation(); // Evitar que se abra el modal
+            event.stopPropagation();
             const juego = todosLosJuegos.find(j => j.id === id);
             if (juego) {
                 toggleLista(juego);
-                // Actualizamos visualmente el botón
                 const btn = event.target.closest('.btn-add-tarjeta');
                 const enLista = listaJuegos.some(j => j.id === id);
                 btn.classList.toggle('agregado', enLista);
