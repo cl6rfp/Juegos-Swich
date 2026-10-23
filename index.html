@@ -84,7 +84,7 @@
             transition: all 0.3s;
             display: flex;
             align-items: center;
-            gap: 6px; /* Separación entre el icono y el número */
+            gap: 6px;
         }
 
         .btn-lista-header:hover {
@@ -319,7 +319,7 @@
             backdrop-filter: blur(4px);
         }
 
-        /* BOTÓN + EN LA TARJETA (Sin círculo, sin fondo, centrado) */
+        /* BOTÓN + EN LA TARJETA (Sin fondo ni círculo, perfectamente centrado) */
         .btn-add-tarjeta {
             position: absolute;
             top: 10px;
@@ -330,8 +330,8 @@
             background: transparent;
             border: none;
             color: #fff;
-            font-size: 28px; /* Tamaño grande para que se vea bien */
-            font-weight: 300; /* Grosor de la fuente */
+            font-size: 28px;
+            font-weight: 300;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -339,7 +339,7 @@
             transition: all 0.2s;
             padding: 0;
             line-height: 1;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Sombra para que se lea sobre la carátula */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
         }
 
         .btn-add-tarjeta:hover {
@@ -434,28 +434,30 @@
             color: #ddd;
         }
 
+        /* BOTÓN DEL MODAL (Restaurado con el gradiente original) */
         .btn-add-modal {
             display: inline-block;
             margin-top: 15px;
             padding: 12px 25px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: linear-gradient(90deg, #00f5d4, #00b4d8);
+            color: #0f0c29;
+            border: none;
             border-radius: 25px;
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 245, 212, 0.4);
         }
 
         .btn-add-modal:hover {
-            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 245, 212, 0.6);
         }
 
         .btn-add-modal.agregado {
             background: linear-gradient(90deg, #f15bb5, #9b5de5);
             color: #fff;
-            border: none;
             box-shadow: 0 4px 15px rgba(241, 91, 181, 0.4);
         }
 
@@ -532,27 +534,29 @@
             color: #fff;
         }
 
-        /* BOTÓN X DE ELIMINAR EN LA LISTA (Centrado milimétricamente, conserva tono rojo) */
+        /* BOTÓN X DE ELIMINAR EN LA LISTA (Restaurado con gradiente original) */
         .btn-quitar-item {
-            background: transparent;
+            background: linear-gradient(90deg, #f15bb5, #9b5de5);
             border: none;
-            color: #f15bb5;
+            color: #fff;
             width: 28px;
             height: 28px;
+            border-radius: 50%;
             cursor: pointer;
-            font-size: 20px;
-            font-weight: 300;
-            transition: all 0.2s;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 0;
             line-height: 1;
+            box-shadow: 0 4px 10px rgba(241, 91, 181, 0.3);
         }
 
         .btn-quitar-item:hover {
-            color: #ff4d94;
-            transform: scale(1.2);
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(241, 91, 181, 0.6);
         }
 
         .panel-footer {
@@ -560,22 +564,14 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .btn-compartir {
-            width: 100%;
-            padding: 12px;
-            background: linear-gradient(90deg, #00f5d4, #f15bb5);
-            color: #fff;
-            border: none;
-            border-radius: 12px;
+        /* TEXTO "COMPARTIR LISTA" EN LUGAR DEL BOTÓN GRANDE */
+        .texto-compartir {
+            display: block;
+            text-align: center;
+            color: #00f5d4;
             font-size: 16px;
             font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s;
             margin-bottom: 15px;
-        }
-
-        .btn-compartir:hover {
-            box-shadow: 0 0 20px rgba(0, 245, 212, 0.5);
         }
 
         .apps-compartir {
@@ -702,7 +698,7 @@
             <div id="contenedor-items-lista"></div>
         </div>
         <div class="panel-footer">
-            <button class="btn-compartir" onclick="compartirLista()">Compartir lista</button>
+            <span class="texto-compartir">Compartir lista:</span>
             <div class="apps-compartir">
                 <div class="app-btn whatsapp" title="Compartir por WhatsApp" onclick="compartirWhatsApp()">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
@@ -846,15 +842,6 @@
             });
             texto += "\nGracias, espero su respuesta.";
             return texto;
-        }
-
-        function compartirLista() {
-            const texto = generarTextoCompartir();
-            if (!texto) {
-                alert('Tu lista está vacía. Añade algunos juegos primero.');
-                return;
-            }
-            compartirWhatsApp();
         }
 
         function compartirWhatsApp() {
