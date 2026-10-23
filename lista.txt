@@ -23,6 +23,7 @@
     "id": "AQ7JA",
     "region": "EN",
     "titulo": "ABZÛ",
+    "fanart": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/store/software/switch/70010000012836/07b78917932a19333210233d35e8c53966f680ff25d22632a15309131759b9d9",
     "plataforma": "Nintendo Switch",
     "lanzamiento": "2018",
     "genero": ["Aventura", "Exploración submarina"],
