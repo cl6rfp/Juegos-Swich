@@ -71,7 +71,7 @@
             color: #aaa;
         }
 
-        /* Botón de la lista en el header (Solo icono y número, sin paréntesis) */
+        /* Botón de la lista en el header */
         .btn-lista-header {
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -247,7 +247,6 @@
             margin-top: 15px; 
         }
 
-        /* Efecto Hover: Solo eleva la tarjeta, sin hacer zoom (scale) */
         .tarjeta:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(241, 91, 181, 0.3), 0 0 30px rgba(0, 245, 212, 0.2);
@@ -261,7 +260,6 @@
             z-index: 1;
         }
 
-        /* La imagen se mantiene quieta y estática */
         .tarjeta-imagen img {
             width: 100%;
             height: 100%;
@@ -316,7 +314,6 @@
             backdrop-filter: blur(4px);
         }
 
-        /* BOTÓN + EN LA TARJETA (Sin fondo ni círculo, perfectamente centrado) */
         .btn-add-tarjeta {
             position: absolute;
             top: 10px;
@@ -349,7 +346,6 @@
             text-shadow: 0 0 10px rgba(241, 91, 181, 0.8);
         }
 
-        /* Modal de juego */
         .modal {
             display: none;
             position: fixed;
@@ -431,7 +427,6 @@
             color: #ddd;
         }
 
-        /* BOTÓN DEL MODAL (Restaurado con el gradiente original) */
         .btn-add-modal {
             display: inline-block;
             margin-top: 15px;
@@ -458,7 +453,7 @@
             box-shadow: 0 4px 15px rgba(241, 91, 181, 0.4);
         }
 
-        /* Panel lateral de la lista */
+        /* PANEL LATERAL DE LA LISTA (Efecto Cristal) */
         .panel-lista {
             position: fixed;
             top: 0;
@@ -466,7 +461,9 @@
             width: 100%;
             max-width: 400px;
             height: 100vh;
-            background: linear-gradient(135deg, #1a1a3e, #0f0c29);
+            background: rgba(15, 12, 41, 0.85); /* Fondo semitransparente */
+            backdrop-filter: blur(15px); /* Desenfoque de cristal */
+            -webkit-backdrop-filter: blur(15px);
             z-index: 300;
             box-shadow: -10px 0 30px rgba(0,0,0,0.5);
             transition: right 0.3s ease;
@@ -518,12 +515,13 @@
             font-size: 15px;
         }
 
+        /* ITEMS DE LA LISTA (Sólidos para que se distingan bien) */
         .item-lista {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 12px 15px;
-            background: rgba(255, 255, 255, 0.05);
+            background: #1a1a3e; /* Color sólido, sin transparencia */
             border-radius: 10px;
             margin-bottom: 10px;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -531,7 +529,6 @@
             color: #fff;
         }
 
-        /* BOTÓN X DE ELIMINAR EN LA LISTA (Restaurado con gradiente original) */
         .btn-quitar-item {
             background: linear-gradient(90deg, #f15bb5, #9b5de5);
             border: none;
@@ -559,9 +556,9 @@
         .panel-footer {
             padding: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(15, 12, 41, 0.5); /* Un poco más de contraste en el pie */
         }
 
-        /* TEXTO "COMPARTIR LISTA" EN LUGAR DEL BOTÓN GRANDE */
         .texto-compartir {
             display: block;
             text-align: center;
@@ -606,7 +603,6 @@
         .app-btn.telegram:hover { box-shadow: 0 0 15px #0088cc; }
         .app-btn.messenger:hover { box-shadow: 0 0 15px #0084FF; }
 
-        /* Fondo oscuro para el panel */
         .panel-overlay {
             display: none;
             position: fixed;
@@ -671,7 +667,6 @@
         <div class="catalogo" id="catalogo"></div>
     </main>
 
-    <!-- Modal de juego -->
     <div class="modal" id="modal">
         <div class="modal-contenido">
             <span class="cerrar" onclick="cerrarModal()">&times;</span>
@@ -683,7 +678,6 @@
         </div>
     </div>
 
-    <!-- Panel lateral de la lista -->
     <div class="panel-overlay" id="panel-overlay" onclick="cerrarPanelLista()"></div>
     <div class="panel-lista" id="panel-lista">
         <div class="panel-header">
@@ -735,8 +729,6 @@
             }
         }
 
-        /* --- LÓGICA DE LA LISTA --- */
-        
         function guardarLista() {
             localStorage.setItem('gameflix_lista', JSON.stringify(listaJuegos));
             actualizarContadorLista();
@@ -828,8 +820,6 @@
             document.getElementById('panel-overlay').classList.remove('activo');
         }
 
-        /* --- COMPARTIR --- */
-
         function generarTextoCompartir() {
             if (listaJuegos.length === 0) return '';
             
@@ -866,8 +856,6 @@
             });
         }
 
-        /* --- RESTO DE LÓGICA EXISTENTE --- */
-
         function mostrarHero(juego) {
             document.getElementById('hero-titulo').textContent = juego.titulo;
             document.getElementById('hero-sinopsis').textContent = juego.sinopsis;
@@ -891,7 +879,7 @@
             let index = 0;
             const intentar = () => {
                 if (index < urlsFanartLocal.length) {
-                const img = new Image();
+                    const img = new Image();
                     img.onload = () => aplicarFondo(urlsFanartLocal[index]);
                     img.onerror = () => { index++; intentar(); };
                     img.src = urlsFanartLocal[index];
