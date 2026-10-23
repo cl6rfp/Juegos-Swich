@@ -71,7 +71,7 @@
             color: #aaa;
         }
 
-        /* Botón de la lista en el header (Solo icono y número) */
+        /* Botón de la lista en el header (Solo icono y número, sin paréntesis) */
         .btn-lista-header {
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -84,7 +84,7 @@
             transition: all 0.3s;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px; /* Separación entre el icono y el número */
         }
 
         .btn-lista-header:hover {
@@ -319,7 +319,7 @@
             backdrop-filter: blur(4px);
         }
 
-        /* Botón + en la tarjeta (Centrado y sin verde) */
+        /* BOTÓN + EN LA TARJETA (Sin círculo, sin fondo, centrado) */
         .btn-add-tarjeta {
             position: absolute;
             top: 10px;
@@ -327,32 +327,29 @@
             z-index: 10;
             width: 36px;
             height: 36px;
-            border-radius: 50%;
-            background: rgba(15, 12, 41, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: transparent;
+            border: none;
             color: #fff;
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 28px; /* Tamaño grande para que se vea bien */
+            font-weight: 300; /* Grosor de la fuente */
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s;
-            backdrop-filter: blur(4px);
-            padding: 0; /* Asegura el centrado */
-            line-height: 1; /* Asegura el centrado */
+            transition: all 0.2s;
+            padding: 0;
+            line-height: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Sombra para que se lea sobre la carátula */
         }
 
         .btn-add-tarjeta:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: #fff;
-            transform: scale(1.1);
+            transform: scale(1.2);
+            text-shadow: 0 0 10px #fff;
         }
 
         .btn-add-tarjeta.agregado {
-            background: #f15bb5;
-            color: #fff;
-            border-color: #f15bb5;
+            color: #f15bb5;
+            text-shadow: 0 0 10px rgba(241, 91, 181, 0.8);
         }
 
         /* Modal de juego */
@@ -535,18 +532,17 @@
             color: #fff;
         }
 
-        /* Botón X de eliminar en la lista (Centrado y rojo) */
+        /* BOTÓN X DE ELIMINAR EN LA LISTA (Centrado milimétricamente, conserva tono rojo) */
         .btn-quitar-item {
-            background: rgba(241, 91, 181, 0.15);
-            border: 1px solid rgba(241, 91, 181, 0.3);
+            background: transparent;
+            border: none;
             color: #f15bb5;
             width: 28px;
             height: 28px;
-            border-radius: 50%;
             cursor: pointer;
-            font-weight: bold;
-            font-size: 16px;
-            transition: all 0.3s;
+            font-size: 20px;
+            font-weight: 300;
+            transition: all 0.2s;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -555,9 +551,8 @@
         }
 
         .btn-quitar-item:hover {
-            background: #f15bb5;
-            color: #fff;
-            border-color: #f15bb5;
+            color: #ff4d94;
+            transform: scale(1.2);
         }
 
         .panel-footer {
@@ -655,7 +650,7 @@
         <div class="header-derecha">
             <input type="text" id="buscador" placeholder="Buscar juego..." class="buscador">
             <button class="btn-lista-header" onclick="abrirPanelLista()">
-                📋 (<span id="contador-lista">0</span>)
+                📋 <span id="contador-lista">0</span>
             </button>
         </div>
     </header>
