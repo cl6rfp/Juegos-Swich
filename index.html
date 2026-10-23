@@ -242,9 +242,7 @@
             transition: all 0.35s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
-            
-            /* ELIMINADO el aspect-ratio: 3 / 5; para que la tarjeta se adapte al 100% de la imagen */
-            
+            aspect-ratio: 3 / 4; /* Mantenemos la proporción de la tarjeta */
             margin-top: 15px; 
         }
 
@@ -254,20 +252,19 @@
         }
 
         .tarjeta-imagen {
+            position: absolute;
+            inset: 0;
             width: 100%;
-            /* Quitamos el position: absolute para que la imagen dicte la altura de la tarjeta */
-            position: relative; 
-            display: block;
+            height: 100%;
+            z-index: 1;
         }
 
+        /* LA MAGIA: object-fit: fill estira la imagen para llenar 100% X e Y */
         .tarjeta-imagen img {
             width: 100%;
-            height: auto; /* La altura se ajusta automáticamente manteniendo la proporción */
-            object-fit: cover;
+            height: 100%;
+            object-fit: fill; /* <-- Aquí estiramos la imagen sin recortar */
             display: block;
-            /* Si quieres que la imagen se vea un poco más grande y recorte los bordes 
-               para llenar la tarjeta, usa aspect-ratio: 4/3 aquí. Pero si quieres
-               que se vea la imagen completa, deja el height: auto como está. */
         }
 
         .tarjeta-info {
@@ -276,14 +273,13 @@
             left: 0;
             width: 100%;
             z-index: 2;
-            padding: 60px 16px 16px 16px; /* Reducido de 80px a 60px */
+            padding: 60px 16px 16px 16px;
             background: linear-gradient(to top, rgba(15, 12, 41, 0.98) 0%, rgba(15, 12, 41, 0.8) 60%, transparent 100%);
             display: flex;
             flex-direction: column;
-            pointer-events: none; /* Para que no interfiera con el click si es necesario */
+            pointer-events: none;
         }
 
-        /* Hacemos que los textos de info tengan punteros para que se puedan seleccionar si hace falta */
         .tarjeta-info * {
             pointer-events: auto;
         }
